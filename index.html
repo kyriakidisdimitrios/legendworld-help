@@ -3,24 +3,94 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Expanding Land - Help</title>
+  <title>Help - Expanding Land</title>
   <style>
-    html, body {
-      margin: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      background: #000;
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0a0e17;
+      color: #c8d6e5;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
     }
-    iframe {
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background: #111827;
+      border-radius: 12px;
+      padding: 40px;
+      border: 1px solid #1e293b;
+      text-align: center;
+    }
+    h1 {
+      color: #38bdf8;
+      font-size: 2em;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: #64748b;
+      margin-bottom: 30px;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .links a {
       display: block;
-      width: 100%;
-      height: 100%;
-      border: 0;
+      padding: 14px 20px;
+      background: #1e293b;
+      color: #e2e8f0;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1.05em;
+      transition: background 0.2s, transform 0.1s;
+      border: 1px solid #334155;
     }
+    .links a:hover {
+      background: #334155;
+      transform: translateY(-1px);
+    }
+    .links a span {
+      color: #64748b;
+      font-size: 0.85em;
+      display: block;
+      margin-top: 4px;
+    }
+    .home-link {
+      margin-top: 30px;
+      display: inline-block;
+      color: #38bdf8;
+      text-decoration: none;
+    }
+    .home-link:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <iframe src="https://jimboy3100.github.io/extras/legendffa.html" allowfullscreen></iframe>
+  <div class="container">
+    <h1>Expanding Land</h1>
+    <p class="subtitle">Help & Legal</p>
+
+    <div class="links">
+      <a href="privacy.html">
+        Privacy Policy
+        <span>How we handle your data</span>
+      </a>
+      <a href="https://discord.gg/legendmod" target="_blank">
+        Discord Support
+        <span>Get help from the community</span>
+      </a>
+      <a href="https://expanding.land">
+        Play Game
+        <span>expanding.land</span>
+      </a>
+    </div>
+
+    <a href="https://expanding.land" class="home-link">← Back to Expanding Land</a>
+  </div>
 </body>
 </html>
