@@ -3,7 +3,174 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Expanding Land - Help</title>
+
+  <!-- ═══ SEO: Title ═══ -->
+  <title>Expanding Land – Help, Game Guide & Documentation | Free IO Game with 720 Real Players</title>
+
+  <!-- ═══ SEO: Canonical URL ═══ -->
+  <link rel="canonical" href="https://help.expanding.land/">
+
+  <!-- ═══ SEO: Core Meta ═══ -->
+  <meta name="description"
+      content="Expanding Land help center — learn how to play, game features, anti-teaming mechanics, and documentation for the free high-performance IO game with 720 real players, no bots. Built from scratch in C for ultra-low latency. Resizable map, custom skins, encrypted connections, and more.">
+  <meta name="keywords"
+      content="expanding land help, expanding land guide, expanding land game, how to play expanding land, expanding land io game, expanding land features, io game help, io game guide, agar.io alternative, agario alternative, free io game, multiplayer browser game, expanding land anti teaming, expanding land skins, expanding land spectator, expanding land leaderboard, expanding land chat, io game no bots, real players io game, expanding land documentation, expanding land wiki, expanding land tips, expanding land tricks, expanding land strategy, cell game guide, io game tutorial, expanding land controls, resizable map game, best io games 2025">
+  <meta name="author" content="Expanding Land">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="theme-color" content="#1a1a2e">
+
+  <!-- ═══ Open Graph ═══ -->
+  <meta property="og:site_name" content="Expanding Land">
+  <meta property="og:title" content="Expanding Land – Help & Game Guide | Free IO Game">
+  <meta property="og:description"
+      content="Learn how to play Expanding Land — a free IO game with 720 real players, no bots. Game features, anti-teaming system, tips, and full documentation.">
+  <meta property="og:url" content="https://help.expanding.land/">
+  <meta property="og:image" content="https://jimboy3100.github.io/banners/expanding_ico.ico">
+  <meta property="og:image:alt" content="Expanding Land Help & Game Guide">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+
+  <!-- ═══ Twitter / X Card ═══ -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Expanding Land – Help & Game Guide | 720 Players, No Bots">
+  <meta name="twitter:description"
+      content="Complete guide for Expanding Land IO game. 720 real players, resizable map, anti-cheat, encrypted connections. Learn game mechanics & features.">
+  <meta name="twitter:image" content="https://jimboy3100.github.io/banners/expanding_ico.ico">
+
+  <!-- ═══ Schema.org JSON-LD ═══ -->
+  <script type="application/ld+json">
+  {
+      "@context": "https://schema.org",
+      "@graph": [
+          {
+              "@type": "WebPage",
+              "@id": "https://help.expanding.land/#page",
+              "name": "Expanding Land – Help, Game Guide & Documentation",
+              "description": "Complete help center and documentation for Expanding Land, a free high-performance multiplayer IO game with 720 real players and no bots. Covers game features, anti-teaming mechanics, controls, and tips.",
+              "url": "https://help.expanding.land/",
+              "isPartOf": { "@id": "https://expanding.land/#website" },
+              "about": { "@id": "https://expanding.land/#game" },
+              "breadcrumb": { "@id": "https://help.expanding.land/#breadcrumb" },
+              "inLanguage": "en"
+          },
+          {
+              "@type": "BreadcrumbList",
+              "@id": "https://help.expanding.land/#breadcrumb",
+              "itemListElement": [
+                  { "@type": "ListItem", "position": 1, "name": "Expanding Land", "item": "https://expanding.land/" },
+                  { "@type": "ListItem", "position": 2, "name": "Help & Guide", "item": "https://help.expanding.land/" }
+              ]
+          },
+          {
+              "@type": "Organization",
+              "@id": "https://expanding.land/#organization",
+              "name": "Expanding Land",
+              "url": "https://expanding.land/",
+              "logo": "https://jimboy3100.github.io/banners/expanding_ico.ico",
+              "sameAs": [
+                  "https://discord.com/invite/JUfpR9k",
+                  "https://expanding.land/",
+                  "https://www.legendmod.ml/"
+              ]
+          },
+          {
+              "@type": "FAQPage",
+              "mainEntity": [
+                  {
+                      "@type": "Question",
+                      "name": "What is Expanding Land?",
+                      "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Expanding Land is a free, high-performance multiplayer IO game built from scratch in pure C. It supports up to 720 real players simultaneously with zero bots. The game features a resizable map that dynamically grows with the player base, 200+ spectator slots, encrypted WSS/TLS connections, anti-cheat protection, and ultra-low latency (~5ms tick time vs 40ms on typical Node.js servers)."
+                      }
+                  },
+                  {
+                      "@type": "Question",
+                      "name": "How do I play Expanding Land?",
+                      "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Visit expanding.land in any modern web browser (Chrome, Firefox, Edge, Opera, Brave). No download or registration required. Enter a nickname and click Play. Use your mouse to move, Space to split, W to eject mass. Eat food and smaller players to grow. Reach the top of the leaderboard!"
+                      }
+                  },
+                  {
+                      "@type": "Question",
+                      "name": "What makes Expanding Land different from other IO games?",
+                      "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Expanding Land stands out with: (1) Pure C server engine achieving ~5ms tick time — 8x faster than Node.js servers; (2) 720 real players, zero bots — every cell is a real human; (3) Resizable map that automatically grows or shrinks based on active players; (4) Encrypted WSS/TLS connections for security; (5) Anti-cheat coordinate scrambling; (6) Session stats showing time alive, highest mass, food eaten, and players eaten."
+                      }
+                  },
+                  {
+                      "@type": "Question",
+                      "name": "Does Expanding Land have an anti-teaming system?",
+                      "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Yes. Expanding Land uses an advanced discrete event-based anti-teaming system. Each action (splitting, ejecting mass, virus pops) creates an independent penalty event with its own lifespan. Old events expire naturally without being extended by new ones. When the total penalty score exceeds the threshold, decay rate increases proportionally, discouraging teaming while keeping solo play fair."
+                      }
+                  },
+                  {
+                      "@type": "Question",
+                      "name": "What features does Expanding Land have?",
+                      "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Key features include: 720 real players per server, resizable dynamic map, 200+ spectator slots, full leaderboard, custom skins from Legend Mod, ghost cells on death, in-game chat, spectator mode with free-roam, session stats (time alive, highest mass, food eaten, players eaten), encrypted connections, anti-cheat protection, and compatibility with Legend Mod and Delta extensions."
+                      }
+                  },
+                  {
+                      "@type": "Question",
+                      "name": "Is Expanding Land compatible with mods?",
+                      "acceptedAnswer": {
+                          "@type": "Answer",
+                          "text": "Yes! Expanding Land is fully compatible with OGario-based mods including Legend Mod and Delta. Players can use custom skins, themes, and extended features through these browser extensions. Visit legendmod.ml or deltio.pages.dev to get the mods."
+                      }
+                  }
+              ]
+          },
+          {
+              "@type": "HowTo",
+              "name": "How to Get Started with Expanding Land",
+              "description": "Start playing Expanding Land in 3 simple steps — no download required.",
+              "totalTime": "PT1M",
+              "step": [
+                  {
+                      "@type": "HowToStep",
+                      "position": 1,
+                      "name": "Open Expanding Land",
+                      "text": "Visit expanding.land in your web browser. The game works on Chrome, Firefox, Edge, Opera, Brave, and Safari — no download or registration needed."
+                  },
+                  {
+                      "@type": "HowToStep",
+                      "position": 2,
+                      "name": "Enter Your Nickname and Play",
+                      "text": "Type a nickname in the text field and click Play to join the game. You'll spawn as a small cell in the arena with up to 720 other real players."
+                  },
+                  {
+                      "@type": "HowToStep",
+                      "position": 3,
+                      "name": "Grow and Compete",
+                      "text": "Move with your mouse, eat food (colored dots) and smaller players to grow. Press Space to split your cell, W to eject mass. Climb the leaderboard and dominate the arena!"
+                  }
+              ]
+          }
+      ]
+  }
+  </script>
+
+  <!-- ═══ Preconnect ═══ -->
+  <link rel="preconnect" href="https://jimboy3100.github.io" crossorigin>
+  <link rel="dns-prefetch" href="https://jimboy3100.github.io">
+  <link rel="preconnect" href="https://expanding.land" crossorigin>
+  <link rel="dns-prefetch" href="https://expanding.land">
+
+  <!-- ═══ Hreflang ═══ -->
+  <link rel="alternate" hreflang="en" href="https://help.expanding.land/">
+  <link rel="alternate" hreflang="x-default" href="https://help.expanding.land/">
+
+  <!-- ═══ Favicon ═══ -->
+  <link rel="icon" href="https://jimboy3100.github.io/banners/expanding_ico.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="https://jimboy3100.github.io/banners/expanding_ico.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="https://jimboy3100.github.io/banners/expanding_ico.ico">
+
   <style>
     html, body {
       margin: 0;
@@ -39,17 +206,72 @@
   </style>
 </head>
 <body>
+  <!-- SEO: H1 (visually hidden for crawlers) -->
+  <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Expanding Land – Help, Game Guide & Documentation for the Free IO Game with 720 Real Players</h1>
+
+  <!-- SEO: noscript fallback for crawlers that don't execute JS/iframes -->
+  <noscript>
+    <div style="padding:40px;color:#fff;font-family:sans-serif;background:#1a1a2e;max-width:900px;margin:0 auto;">
+      <h2 style="color:#6ee7b7;font-size:28px;">Expanding Land – Help & Game Guide</h2>
+      <p style="font-size:18px;line-height:1.6;">Expanding Land is a <strong>free, high-performance multiplayer IO game</strong> with <strong>720 real players</strong> and <strong>zero bots</strong>. Built from scratch in pure C for ultra-low latency.</p>
+
+      <h3 style="color:#6ee7b7;">🎮 Game Features</h3>
+      <ul style="line-height:2;">
+        <li><strong>720 Real Players</strong> — No bots allowed, every cell is a real human</li>
+        <li><strong>Resizable Map</strong> — Dynamically grows and shrinks with the player base</li>
+        <li><strong>200+ Spectator Slots</strong> — Watch the action live</li>
+        <li><strong>Ultra-Low Latency</strong> — ~5ms tick time (8x faster than Node.js servers)</li>
+        <li><strong>Encrypted Connections</strong> — WSS/TLS for security</li>
+        <li><strong>Anti-Cheat Protection</strong> — Coordinate scrambling per player</li>
+        <li><strong>Custom Skins</strong> — Full skin support via Legend Mod</li>
+        <li><strong>Session Stats</strong> — Time alive, highest mass, food eaten, players eaten</li>
+        <li><strong>In-Game Chat</strong> — Communicate with other players</li>
+        <li><strong>Leaderboard</strong> — Compete for the #1 spot</li>
+        <li><strong>Ghost Cells</strong> — See where you died</li>
+        <li><strong>Spectator Mode</strong> — Free-roam spectating</li>
+      </ul>
+
+      <h3 style="color:#6ee7b7;">🕹️ How to Play</h3>
+      <ol style="line-height:2;">
+        <li>Visit <a href="https://expanding.land/" style="color:#6ee7b7;">expanding.land</a> in your browser</li>
+        <li>Enter a nickname and click Play</li>
+        <li>Move with your mouse, eat food and smaller players to grow</li>
+        <li>Press <strong>Space</strong> to split, <strong>W</strong> to eject mass</li>
+        <li>Climb the leaderboard and dominate!</li>
+      </ol>
+
+      <h3 style="color:#6ee7b7;">🔗 Compatible Mods</h3>
+      <ul style="line-height:2;">
+        <li><a href="https://www.legendmod.ml/" style="color:#6ee7b7;">Legend Mod</a> — Custom skins, themes, and enhanced features</li>
+        <li><a href="https://deltio.pages.dev/" style="color:#6ee7b7;">Delta Mod</a> — Advanced agar.io client extension</li>
+      </ul>
+
+      <h3 style="color:#6ee7b7;">📊 Performance</h3>
+      <p>Built from scratch in <strong>pure C</strong> — achieves ~5ms tick time at 400+ players (compared to ~40ms for Node.js servers). Server located in Nuremberg, Germany for optimal EU latency with encrypted WSS/TLS connections.</p>
+
+      <p style="margin-top:30px;text-align:center;">
+        <a href="https://expanding.land/" style="color:#1a1a2e;background:#6ee7b7;padding:12px 30px;border-radius:8px;font-size:18px;font-weight:bold;text-decoration:none;">▶ Play Now — Free</a>
+      </p>
+
+      <p style="text-align:center;margin-top:20px;">
+        <a href="https://discord.com/invite/JUfpR9k" style="color:#6ee7b7;">Join our Discord</a> |
+        <a href="https://expanding.land/privacy.html" style="color:#888;">Privacy Policy</a> |
+        <a href="https://expanding.land/terms.html" style="color:#888;">Terms of Service</a>
+      </p>
+    </div>
+  </noscript>
+
   <div class="legal-bar" style="border-bottom:1px solid #222">
     <a href="https://expanding.land/privacy.html">Privacy Policy</a>
     <a href="https://expanding.land/terms.html">Terms of Service</a>
-    <a href="https://discord.com/invite/JUfpR9k" target="_blank">Discord</a>
+    <a href="https://discord.com/invite/JUfpR9k" target="_blank" rel="noopener">Discord</a>
     <a href="https://expanding.land">Expanding Land</a>
   </div>
   <iframe src="https://jimboy3100.github.io/extras/legendffa.html" allowfullscreen loading="eager"></iframe>
   <div class="legal-bar">
     <a href="https://expanding.land/privacy.html">Privacy Policy</a>
     <a href="https://expanding.land/terms.html">Terms of Service</a>
-    <a href="https://discord.com/invite/JUfpR9k" target="_blank">Discord</a>
+    <a href="https://discord.com/invite/JUfpR9k" target="_blank" rel="noopener">Discord</a>
     <a href="https://expanding.land">Expanding Land</a>
   </div>
 </body>
