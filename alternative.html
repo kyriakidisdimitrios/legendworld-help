@@ -121,16 +121,14 @@
         <tr><td>Max players per arena</td><td class="yes">1024 players</td><td class="partial">200 players (limit)</td></tr>
         <tr><td>Bots</td><td class="yes">None — strict no-bots policy</td><td class="no">Servers filled with AI bots</td></tr>
         <tr><td>Map size</td><td class="yes">¼× to 4× Agar.io's map (dynamic)</td><td class="no">Fixed size</td></tr>
+        <tr><td>Server language</td><td class="yes">Pure C</td><td>C++</td></tr>
         <tr><td>Multiboxing</td><td class="yes">Up to 4 accounts allowed</td><td class="no">Unregulated / abused</td></tr>
-        <tr><td>Server engine</td><td class="yes">Pure C (~5ms tick)</td><td class="no">Node.js (~40ms tick)</td></tr>
-        <tr><td>Encrypted connections</td><td class="yes">WSS/TLS</td><td class="partial">Partial</td></tr>
         <tr><td>Anti-cheat</td><td class="yes">Coordinate scrambling</td><td class="no">Minimal</td></tr>
         <tr><td>Anti-teaming</td><td class="yes">Event-based penalty system</td><td class="partial">Basic detection</td></tr>
         <tr><td>Spectator mode</td><td class="yes">200+ slots, free-roam</td><td class="partial">Limited</td></tr>
         <tr><td>Custom skins</td><td class="yes">Full mod support (free)</td><td class="partial">Paid skins only</td></tr>
         <tr><td>In-game chat</td><td class="yes">Yes</td><td class="no">No</td></tr>
         <tr><td>Price</td><td class="yes">100% Free — no pay-to-win</td><td class="partial">Free + microtransactions</td></tr>
-        <tr><td>Session stats</td><td class="yes">Full stats tracking</td><td class="no">Limited</td></tr>
       </tbody>
     </table>
 
@@ -148,8 +146,8 @@
       </div>
       <div class="feature-card">
         <div class="icon">⚡</div>
-        <h4>8× Faster Server</h4>
-        <p>~5ms tick time in pure C vs ~40ms on Agar.io's Node.js. Zero garbage collection pauses.</p>
+        <h4>Written in Pure C</h4>
+        <p>Hand-written C server vs Agar.io's C++. No garbage collection, pre-allocated memory pools.</p>
       </div>
       <div class="feature-card">
         <div class="icon">🎮</div>
@@ -172,6 +170,10 @@
     <p>Let's talk about the raw potential:</p>
     <p>Agar.io's servers cap at <strong>200 players</strong>, and most of those slots are filled by AI bots. On a busy day, you might be playing against 30–50 real humans. The map never changes — it's the same fixed size whether there are 10 players or 200.</p>
     <p>Expanding Land supports <strong>1024 concurrent players per arena</strong> — that's more than <strong>5× Agar.io's limit</strong>. And every single one is a real person. The map dynamically scales from <strong>¼× to 4× the size of Agar.io's map</strong>, growing and shrinking based on how many players are active. When the server is packed, the arena is massive. When it's quiet, the map contracts to keep the action dense.</p>
+
+    <h2>Built for the Future</h2>
+    <p>Agar.io has been essentially unchanged for years. Expanding Land is <strong>actively developed</strong> and has massive potential for growth. The pure C server architecture is designed to scale — current performance benchmarks show significant headroom beyond the current 1024-player cap. New features, modes, and improvements are shipped regularly.</p>
+    <p>Because the entire server is written from scratch in C (rather than relying on third-party frameworks), every aspect of the game can be optimized and extended. From the network protocol to physics calculations, everything is custom-built and under active development. Check the <a href="https://help.expanding.land/changelog.html" style="color:#6366f1">changelog</a> to see what's new.</p>
 
     <h2>Fair Play: Multiboxing & No-Bots Policy</h2>
     <p>Expanding Land takes a unique approach to fairness. Bots are <strong>strictly prohibited</strong> — there are no AI opponents, no bot accounts, and automated play is detected and blocked. Every cell you encounter is controlled by a real human.</p>
