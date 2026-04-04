@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Expanding Land — Updates &amp; Changelog</title>
+    <link>https://help.expanding.land/changelog.html</link>
+    <description>Latest updates, new features, bug fixes, and server improvements for Expanding Land — the free IO game with 1024 players per arena and zero bots.</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://help.expanding.land/rss.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://jimboy3100.github.io/banners/icon192.png</url>
+      <title>Expanding Land</title>
+      <link>https://expanding.land/</link>
+    </image>
+
+    <item>
+      <title>April 2026 — Performance &amp; Session Isolation</title>
+      <link>https://help.expanding.land/changelog.html</link>
+      <guid isPermaLink="false">el-update-2026-04-03</guid>
+      <pubDate>Thu, 03 Apr 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <ul>
+          <li>MAX_VIEW_NODES limit (16384) prevents OOM crashes during extreme zoom-out while keeping 30× headroom for spectators</li>
+          <li>Viewport culling now sends only visible nodes — eliminates FPS drops when zoomed out on large maps</li>
+          <li>Conditional logout: auto-signs out when joining a private server that isn't Expanding Land, preventing opcode 102 conflicts</li>
+          <li>Login buttons (Facebook, Google, Discord) are now disabled on unsupported server types</li>
+          <li>Fixed cell color inconsistencies under high bot density by including name/skin data in update packets</li>
+        </ul>
+      ]]></description>
+      <category>Features</category>
+      <category>Performance</category>
+    </item>
+
+    <item>
+      <title>March 2026 — Cell Merging &amp; Mobile Controls</title>
+      <link>https://help.expanding.land/changelog.html</link>
+      <guid isPermaLink="false">el-update-2026-03-27</guid>
+      <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <ul>
+          <li>Cell merging logic restored and stabilized under high-density scenarios</li>
+          <li>Player identity now consistent across cell updates (name + skin in every packet)</li>
+          <li>Mobile touch controls: "Stop Where Finger Was" mode fully restored</li>
+          <li>Multibox auto-spectate fix ported to TypeScript branch</li>
+          <li>Full Map spectate button now triggers legendmod.sendAction(56) on EL servers</li>
+        </ul>
+      ]]></description>
+      <category>Fixes</category>
+      <category>Performance</category>
+    </item>
+
+    <item>
+      <title>March 2026 — Login Security Fixes</title>
+      <link>https://help.expanding.land/changelog.html</link>
+      <guid isPermaLink="false">el-update-2026-03-23</guid>
+      <pubDate>Sun, 23 Mar 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <ul>
+          <li>Fixed game disconnects on imsolo/agar2 servers when logging in via Google or Facebook</li>
+          <li>Login opcode 102 now conditionally skipped for legacy servers</li>
+          <li>Encrypted WebSocket connections enforced across all server types</li>
+        </ul>
+      ]]></description>
+      <category>Security</category>
+      <category>Fixes</category>
+    </item>
+
+    <item>
+      <title>Core Features — Server Engine &amp; Gameplay</title>
+      <link>https://help.expanding.land/changelog.html</link>
+      <guid isPermaLink="false">el-update-core-features</guid>
+      <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <ul>
+          <li>Pure C server engine</li>
+          <li>1024 concurrent real players per arena — zero bots</li>
+          <li>Resizable map system: ¼× to 4× dynamic scaling based on player count</li>
+          <li>200+ spectator slots with free-roam camera</li>
+          <li>Anti-teaming system with discrete event-based penalty scoring</li>
+          <li>Ghost cells on death — see where you died</li>
+          <li>Session stats: time alive, highest mass, food eaten, players eaten</li>
+          <li>Full Legend Mod and Delta compatibility</li>
+          <li>Android APK support via WebView wrapper</li>
+          <li>Discord OAuth login integration</li>
+        </ul>
+      ]]></description>
+      <category>Features</category>
+    </item>
+  </channel>
+</rss>
