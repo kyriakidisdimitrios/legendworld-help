@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO -->
+  <title>Expanding Land Changelog & Updates — New Features, Fixes & Improvements</title>
+  <link rel="canonical" href="https://help.expanding.land/changelog.html">
+  <meta name="description" content="Expanding Land changelog — latest updates, new features, bug fixes, and server improvements for the free IO game with 720 real players. Stay updated with every release.">
+  <meta name="keywords" content="expanding land updates, expanding land changelog, expanding land new features, expanding land patch notes, io game updates, expanding land news">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Expanding Land — Changelog & Updates">
+  <meta property="og:description" content="Latest updates, features, and improvements for Expanding Land. See what's new in the world's largest IO game.">
+  <meta property="og:url" content="https://help.expanding.land/changelog.html">
+  <meta property="og:image" content="https://jimboy3100.github.io/banners/expanding-land.png">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Expanding Land — Changelog & Updates">
+  <meta name="twitter:description" content="Latest updates and patch notes for Expanding Land IO game.">
+  <meta name="twitter:image" content="https://jimboy3100.github.io/banners/expanding-land.png">
+
+  <link rel="icon" href="https://jimboy3100.github.io/banners/expanding_ico.ico" type="image/x-icon">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; background: #0a0e17; color: #e0e0e0; line-height: 1.7; }
+    .header {
+      text-align: center; padding: 3rem 1rem 2rem;
+      background: linear-gradient(135deg, rgba(99,102,241,0.15), rgba(168,85,247,0.1));
+      border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .header h1 {
+      font-size: 2.5rem; font-weight: 900;
+      background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+    .header p { color: #94a3b8; margin-top: 0.5rem; font-size: 1.1rem; }
+    .nav { text-align: center; padding: 1rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .nav a {
+      color: #6366f1; text-decoration: none; padding: 8px 20px;
+      border: 1px solid rgba(99,102,241,0.3); border-radius: 8px;
+      transition: all 0.2s; font-size: 0.9rem;
+    }
+    .nav a:hover { background: rgba(99,102,241,0.1); border-color: #6366f1; }
+    main { max-width: 800px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+    .entry {
+      margin-bottom: 2.5rem; padding: 1.5rem;
+      background: rgba(255,255,255,0.03); border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .entry-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap; }
+    .version {
+      font-weight: 700; font-size: 1.1rem; color: #fff;
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      padding: 4px 14px; border-radius: 6px; font-size: 0.85rem;
+    }
+    .date { color: #64748b; font-size: 0.85rem; }
+    .tag {
+      display: inline-block; padding: 2px 10px; border-radius: 4px;
+      font-size: 0.75rem; font-weight: 600; text-transform: uppercase;
+    }
+    .tag-feature { background: rgba(34,197,94,0.15); color: #22c55e; }
+    .tag-fix { background: rgba(234,179,8,0.15); color: #eab308; }
+    .tag-perf { background: rgba(59,130,246,0.15); color: #3b82f6; }
+    .tag-security { background: rgba(239,68,68,0.15); color: #ef4444; }
+    .entry ul { list-style: none; padding: 0; }
+    .entry li { padding: 4px 0 4px 1.5rem; position: relative; color: #cbd5e1; }
+    .entry li::before { content: '→'; position: absolute; left: 0; color: #6366f1; font-weight: 700; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>📋 Changelog</h1>
+    <p>Latest updates and improvements to Expanding Land</p>
+  </div>
+  <div class="nav">
+    <a href="https://expanding.land/">🎮 Play Now</a>
+    <a href="https://help.expanding.land/">📖 Help Center</a>
+    <a href="https://discord.com/invite/JUfpR9k">💬 Discord</a>
+  </div>
+  <main>
+    <article class="entry">
+      <div class="entry-header">
+        <span class="version">April 2026</span>
+        <span class="date">2026-04-03</span>
+        <span class="tag tag-feature">Features</span>
+        <span class="tag tag-perf">Performance</span>
+      </div>
+      <ul>
+        <li>MAX_VIEW_NODES limit (16384) prevents OOM crashes during extreme zoom-out while keeping 30× headroom for spectators</li>
+        <li>Viewport culling now sends only visible nodes — eliminates FPS drops when zoomed out on large maps</li>
+        <li>Conditional logout: auto-signs out when joining a private server that isn't Expanding Land, preventing opcode 102 conflicts</li>
+        <li>Login buttons (Facebook, Google, Discord) are now disabled on unsupported server types</li>
+        <li>Fixed cell color inconsistencies under high bot density by including name/skin data in update packets</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-header">
+        <span class="version">March 2026</span>
+        <span class="date">2026-03-27</span>
+        <span class="tag tag-fix">Fixes</span>
+        <span class="tag tag-perf">Performance</span>
+      </div>
+      <ul>
+        <li>Cell merging logic restored and stabilized under high-density scenarios</li>
+        <li>Player identity now consistent across cell updates (name + skin in every packet)</li>
+        <li>Mobile touch controls: "Stop Where Finger Was" mode fully restored</li>
+        <li>Multibox auto-spectate fix ported to TypeScript branch</li>
+        <li>Full Map spectate button now triggers legendmod.sendAction(56) on EL servers</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-header">
+        <span class="version">March 2026</span>
+        <span class="date">2026-03-23</span>
+        <span class="tag tag-security">Security</span>
+        <span class="tag tag-fix">Fixes</span>
+      </div>
+      <ul>
+        <li>Fixed game disconnects on imsolo/agar2 servers when logging in via Google or Facebook</li>
+        <li>Login opcode 102 now conditionally skipped for legacy servers</li>
+        <li>Encrypted WebSocket connections enforced across all server types</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-header">
+        <span class="version">Earlier</span>
+        <span class="date">2025–2026</span>
+        <span class="tag tag-feature">Features</span>
+      </div>
+      <ul>
+        <li>Pure C server engine achieving ~5ms tick time (8× faster than Node.js)</li>
+        <li>720 concurrent real players per arena — zero bots</li>
+        <li>Resizable map system: 0.25× to 8× dynamic scaling based on player count</li>
+        <li>200+ spectator slots with free-roam camera</li>
+        <li>Anti-teaming system with discrete event-based penalty scoring</li>
+        <li>Ghost cells on death — see where you died</li>
+        <li>Session stats: time alive, highest mass, food eaten, players eaten</li>
+        <li>Full Legend Mod and Delta compatibility</li>
+        <li>Android APK support via WebView wrapper</li>
+        <li>Discord OAuth login integration</li>
+      </ul>
+    </article>
+  </main>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Expanding Land Changelog & Updates",
+    "description": "Latest updates, new features, and improvements for Expanding Land — the free IO game with 720 real players.",
+    "url": "https://help.expanding.land/changelog.html",
+    "isPartOf": { "@id": "https://help.expanding.land/#website" },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Expanding Land", "item": "https://expanding.land/" },
+        { "@type": "ListItem", "position": 2, "name": "Help", "item": "https://help.expanding.land/" },
+        { "@type": "ListItem", "position": 3, "name": "Changelog", "item": "https://help.expanding.land/changelog.html" }
+      ]
+    }
+  }
+  </script>
+</body>
+</html>

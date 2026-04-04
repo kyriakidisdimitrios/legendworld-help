@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page Not Found — Expanding Land Help</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="https://jimboy3100.github.io/banners/expanding_ico.ico" type="image/x-icon">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0a0e17;
+      color: #e0e0e0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+    .container { text-align: center; padding: 2rem; max-width: 520px; }
+    .code {
+      font-size: 8rem; font-weight: 900;
+      background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      line-height: 1; margin-bottom: 0.5rem;
+    }
+    h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem; color: #fff; }
+    p { font-size: 1rem; color: #94a3b8; margin-bottom: 2rem; line-height: 1.6; }
+    .btn {
+      display: inline-block; padding: 14px 36px;
+      background: linear-gradient(135deg, #6366f1, #a855f7);
+      color: #fff; text-decoration: none; border-radius: 12px;
+      font-weight: 700; font-size: 1.1rem;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 4px 20px rgba(99, 102, 241, 0.3);
+    }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(99, 102, 241, 0.5); }
+    .links { margin-top: 1.5rem; display: flex; gap: 1.5rem; justify-content: center; }
+    .links a { color: #6366f1; text-decoration: none; font-size: 0.9rem; }
+    .links a:hover { text-decoration: underline; }
+    .cell { position: fixed; border-radius: 50%; opacity: 0.08; animation: float 20s infinite ease-in-out; }
+    .cell:nth-child(1) { width: 200px; height: 200px; background: #6366f1; top: 10%; left: 5%; }
+    .cell:nth-child(2) { width: 150px; height: 150px; background: #a855f7; top: 60%; right: 10%; animation-delay: -5s; }
+    .cell:nth-child(3) { width: 100px; height: 100px; background: #ec4899; bottom: 15%; left: 30%; animation-delay: -10s; }
+    @keyframes float { 0%, 100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-30px) scale(1.1); } }
+  </style>
+</head>
+<body>
+  <div class="cell"></div><div class="cell"></div><div class="cell"></div>
+  <div class="container">
+    <div class="code">404</div>
+    <h1>This cell got eaten!</h1>
+    <p>The help page you're looking for doesn't exist. Check out the main help center or jump into the game!</p>
+    <a href="https://help.expanding.land/" class="btn">📖 Help Center</a>
+    <div class="links">
+      <a href="https://expanding.land/">Play Now</a>
+      <a href="https://discord.com/invite/JUfpR9k">Discord</a>
+    </div>
+  </div>
+</body>
+</html>
