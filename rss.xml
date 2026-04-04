@@ -3,7 +3,7 @@
   <channel>
     <title>Expanding Land — Updates &amp; Changelog</title>
     <link>https://help.expanding.land/changelog.html</link>
-    <description>Latest updates, new features, bug fixes, and server improvements for Expanding Land — the free IO game with 1024 players per arena and zero bots.</description>
+    <description>Latest updates, new features, bug fixes, server improvements, and community content for Expanding Land — the free IO game with 1024 players per arena and zero bots. Built entirely in C. Compatible with Legend Mod, Delta, and Agar2.</description>
     <language>en-us</language>
     <lastBuildDate>Fri, 04 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://help.expanding.land/rss.xml" rel="self" type="application/rss+xml"/>
@@ -12,79 +12,194 @@
       <title>Expanding Land</title>
       <link>https://expanding.land/</link>
     </image>
+    <managingEditor>help@expanding.land (Expanding Land)</managingEditor>
+    <webMaster>help@expanding.land (Expanding Land)</webMaster>
+    <copyright>2026 Expanding Land</copyright>
+    <category>Games</category>
+    <category>IO Games</category>
+    <category>Browser Games</category>
+    <ttl>1440</ttl>
+
+    <!-- ═══ Content Pages ═══ -->
 
     <item>
-      <title>April 2026 — Performance &amp; Session Isolation</title>
+      <title>Best IO Games in 2026 — Top 15 Free Browser Games Ranked</title>
+      <link>https://help.expanding.land/best-io-games.html</link>
+      <guid isPermaLink="true">https://help.expanding.land/best-io-games.html</guid>
+      <pubDate>Fri, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <p>The definitive ranked list of the best free IO games you can play in your browser in 2026. Featuring 15 games including Agar.io, Slither.io, Diep.io, Surviv.io, Krunker.io, and Expanding Land — with honest reviews, player counts, and a side-by-side comparison table.</p>
+        <p>Includes a quick comparison of the top 5 cell/growth games by max players, bot status, map type, and cost.</p>
+      ]]></description>
+      <category>Guide</category>
+      <category>IO Games</category>
+    </item>
+
+    <item>
+      <title>How to Get Good at IO Games — Complete Strategy Guide</title>
+      <link>https://help.expanding.land/guide.html</link>
+      <guid isPermaLink="true">https://help.expanding.land/guide.html</guid>
+      <pubDate>Fri, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <p>A comprehensive strategy guide for cell IO games. Covers everything from basic controls to advanced techniques:</p>
+        <ul>
+          <li>Controls &amp; basics — mouse movement, splitting, ejecting mass</li>
+          <li>Early game survival — eating dots, avoiding bigger cells, staying near edges</li>
+          <li>Splitting — the 2× rule, when to split vs. wait</li>
+          <li>Virus mechanics — defensive hiding, offensive virus shooting (7 W presses)</li>
+          <li>Mass management — decay rates, strategic ejecting</li>
+          <li>Map positioning — corners vs. edges vs. center</li>
+          <li>Advanced techniques — tricksplit, popsplit, bait-and-switch</li>
+          <li>Expanding Land-specific tips — dynamic map, 1024 players, spectator learning</li>
+        </ul>
+      ]]></description>
+      <category>Guide</category>
+      <category>Strategy</category>
+    </item>
+
+    <item>
+      <title>Why No Bots? — How Expanding Land Keeps Every Player Real</title>
+      <link>https://help.expanding.land/no-bots.html</link>
+      <guid isPermaLink="true">https://help.expanding.land/no-bots.html</guid>
+      <pubDate>Fri, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <p>Why does Expanding Land ban all bots? This article explains the strict no-bots policy and why real-player-only gameplay creates better competition:</p>
+        <ul>
+          <li>The bot problem in modern IO games — fake players, hollow leaderboards</li>
+          <li>Every cell in Expanding Land is controlled by a real human</li>
+          <li>Real competition means every kill is a real outplay</li>
+          <li>1024 player capacity means arenas fill naturally without needing bots</li>
+          <li>Dynamic map shrinking keeps matches dense even with fewer players</li>
+          <li>Multiboxing allowed (up to 4 accounts) as a skill-based alternative to bots</li>
+        </ul>
+      ]]></description>
+      <category>Policy</category>
+      <category>Fair Play</category>
+    </item>
+
+    <item>
+      <title>Agar.io vs. Expanding Land — Side-by-Side Comparison</title>
+      <link>https://help.expanding.land/alternative.html</link>
+      <guid isPermaLink="true">https://help.expanding.land/alternative.html</guid>
+      <pubDate>Fri, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <p>A factual side-by-side comparison between Agar.io (launched 2015) and Expanding Land (launched 2026). Covers:</p>
+        <ul>
+          <li>Max players — 1024 (EL) vs 200 (Agar.io)</li>
+          <li>Bots — none in EL, prevalent in Agar.io</li>
+          <li>Map — dynamic ¼× to 4× scaling (EL) vs fixed size (Agar.io)</li>
+          <li>Server language — Pure C (EL) vs C++ (Agar.io)</li>
+          <li>Multiboxing — regulated 4 accounts (EL) vs unregulated (Agar.io)</li>
+          <li>Mod support — Legend Mod, Delta, and Agar2 all compatible</li>
+          <li>Price — 100% free with no pay-to-win</li>
+        </ul>
+      ]]></description>
+      <category>Comparison</category>
+      <category>IO Games</category>
+    </item>
+
+    <!-- ═══ Changelog Updates ═══ -->
+
+    <item>
+      <title>April 2026 — Viewport Culling, Session Isolation &amp; OOM Protection</title>
       <link>https://help.expanding.land/changelog.html</link>
       <guid isPermaLink="false">el-update-2026-04-03</guid>
       <pubDate>Thu, 03 Apr 2026 00:00:00 +0000</pubDate>
       <description><![CDATA[
+        <p><strong>Performance &amp; Stability:</strong></p>
         <ul>
-          <li>MAX_VIEW_NODES limit (16384) prevents OOM crashes during extreme zoom-out while keeping 30× headroom for spectators</li>
-          <li>Viewport culling now sends only visible nodes — eliminates FPS drops when zoomed out on large maps</li>
-          <li>Conditional logout: auto-signs out when joining a private server that isn't Expanding Land, preventing opcode 102 conflicts</li>
-          <li>Login buttons (Facebook, Google, Discord) are now disabled on unsupported server types</li>
-          <li>Fixed cell color inconsistencies under high bot density by including name/skin data in update packets</li>
+          <li>MAX_VIEW_NODES limit set to 16384 — prevents out-of-memory crashes during extreme zoom-out while keeping 30× headroom for spectators viewing crowded arenas</li>
+          <li>Viewport culling now sends only nodes visible in the player's current view — eliminates FPS drops when zoomed out on large maps with many cells</li>
+        </ul>
+        <p><strong>Session Management:</strong></p>
+        <ul>
+          <li>Conditional logout: client auto-signs out when joining a private server that isn't Expanding Land, preventing opcode 102 conflicts that caused disconnects</li>
+          <li>Login buttons (Facebook, Google, Discord) are now disabled on server types that don't support them, preventing confusing error states</li>
+        </ul>
+        <p><strong>Bug Fixes:</strong></p>
+        <ul>
+          <li>Fixed cell color inconsistencies under high player density by including name and skin data in every update packet</li>
         </ul>
       ]]></description>
-      <category>Features</category>
       <category>Performance</category>
+      <category>Stability</category>
+      <category>Bug Fix</category>
     </item>
 
     <item>
-      <title>March 2026 — Cell Merging &amp; Mobile Controls</title>
+      <title>March 2026 — Cell Merging Restored, Mobile Controls Fixed</title>
       <link>https://help.expanding.land/changelog.html</link>
       <guid isPermaLink="false">el-update-2026-03-27</guid>
       <pubDate>Fri, 27 Mar 2026 00:00:00 +0000</pubDate>
       <description><![CDATA[
+        <p><strong>Server-Side Fixes:</strong></p>
         <ul>
-          <li>Cell merging logic restored and stabilized under high-density scenarios</li>
-          <li>Player identity now consistent across cell updates (name + skin in every packet)</li>
-          <li>Mobile touch controls: "Stop Where Finger Was" mode fully restored</li>
-          <li>Multibox auto-spectate fix ported to TypeScript branch</li>
-          <li>Full Map spectate button now triggers legendmod.sendAction(56) on EL servers</li>
+          <li>Cell merging logic restored and stabilized — merging now works correctly under high-density scenarios where many cells overlap</li>
+          <li>Player identity consistency improved: name and skin data included in every cell update packet, fixing cases where cells appeared with wrong colors</li>
+        </ul>
+        <p><strong>Client-Side Improvements:</strong></p>
+        <ul>
+          <li>Mobile touch controls: "Stop Where Finger Was" (Target Mode) fully restored — cell stops immediately on finger release when enabled</li>
+          <li>Multibox auto-spectate fix ported from jim branch to the TypeScript branch</li>
+          <li>Full Map spectate button now correctly triggers legendmod.sendAction(56) exclusively on Expanding Land servers</li>
         </ul>
       ]]></description>
-      <category>Fixes</category>
-      <category>Performance</category>
+      <category>Bug Fix</category>
+      <category>Mobile</category>
+      <category>Server</category>
     </item>
 
     <item>
-      <title>March 2026 — Login Security Fixes</title>
+      <title>March 2026 — Login Disconnect Fix for Legacy Servers</title>
       <link>https://help.expanding.land/changelog.html</link>
       <guid isPermaLink="false">el-update-2026-03-23</guid>
       <pubDate>Sun, 23 Mar 2026 00:00:00 +0000</pubDate>
       <description><![CDATA[
+        <p><strong>Login Security:</strong></p>
         <ul>
-          <li>Fixed game disconnects on imsolo/agar2 servers when logging in via Google or Facebook</li>
-          <li>Login opcode 102 now conditionally skipped for legacy servers</li>
-          <li>Encrypted WebSocket connections enforced across all server types</li>
+          <li>Fixed game disconnects that occurred on imsolo and agar2 servers when logging in via Google or Facebook authentication</li>
+          <li>Login opcode 102 (_lw_sendLogin102) is now conditionally skipped for legacy server types that don't support it, while remaining active for Expanding Land</li>
+          <li>Encrypted WebSocket (WSS/TLS) connections enforced across all server types for secure communication</li>
         </ul>
       ]]></description>
       <category>Security</category>
-      <category>Fixes</category>
+      <category>Bug Fix</category>
     </item>
 
     <item>
-      <title>Core Features — Server Engine &amp; Gameplay</title>
+      <title>Core Features — Expanding Land Server Engine &amp; Gameplay</title>
       <link>https://help.expanding.land/changelog.html</link>
       <guid isPermaLink="false">el-update-core-features</guid>
       <pubDate>Wed, 01 Jan 2025 00:00:00 +0000</pubDate>
       <description><![CDATA[
+        <p><strong>Server Architecture:</strong></p>
         <ul>
-          <li>Pure C server engine</li>
-          <li>1024 concurrent real players per arena — zero bots</li>
-          <li>Resizable map system: ¼× to 4× dynamic scaling based on player count</li>
+          <li>Entire server written from scratch in pure C</li>
+          <li>1024 concurrent real players per arena — zero bots, zero AI opponents</li>
+          <li>Pre-allocated memory pools, split quadtree optimization for efficient spatial queries</li>
+          <li>Server located in Nuremberg, Germany (Hetzner) for EU-optimized latency</li>
+        </ul>
+        <p><strong>Gameplay Features:</strong></p>
+        <ul>
+          <li>Resizable map system: ¼× to 4× dynamic scaling based on active player count</li>
           <li>200+ spectator slots with free-roam camera</li>
-          <li>Anti-teaming system with discrete event-based penalty scoring</li>
-          <li>Ghost cells on death — see where you died</li>
+          <li>Anti-teaming system using discrete event-based penalty scoring — each action (virus, split, W, danger zone) tracked independently with its own lifespan</li>
+          <li>Ghost cells on death — see exactly where you died for learning from mistakes</li>
           <li>Session stats: time alive, highest mass, food eaten, players eaten</li>
-          <li>Full Legend Mod and Delta compatibility</li>
-          <li>Android APK support via WebView wrapper</li>
+          <li>In-game chat system</li>
+        </ul>
+        <p><strong>Compatibility &amp; Access:</strong></p>
+        <ul>
+          <li>Full compatibility with Legend Mod, Delta, and Agar2 browser extensions</li>
+          <li>Android APK available (standalone app via WebView wrapper, no Play Store needed)</li>
           <li>Discord OAuth login integration</li>
+          <li>Strict no-bots policy — automated play detected and blocked</li>
+          <li>Up to 4 multibox accounts per player (regulated, not unlimited)</li>
         </ul>
       ]]></description>
       <category>Features</category>
+      <category>Architecture</category>
+      <category>Launch</category>
     </item>
   </channel>
 </rss>
