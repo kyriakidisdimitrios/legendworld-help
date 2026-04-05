@@ -5,7 +5,7 @@
     <link>https://help.expanding.land/changelog.html</link>
     <description>Latest updates, new features, bug fixes, server improvements, and community content for Expanding Land — the free IO game with 1024 players per arena and zero bots. Built entirely in C. Compatible with Legend Mod, Delta, and Agar2.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 05 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://help.expanding.land/rss.xml" rel="self" type="application/rss+xml"/>
     <image>
       <url>https://jimboy3100.github.io/banners/icon192.png</url>
@@ -111,6 +111,31 @@
     </item>
 
     <!-- ═══ Changelog Updates ═══ -->
+
+    <item>
+      <title>April 2026 — Live Server Status, Anti-Flicker Spectate Fix &amp; Map Scale Display</title>
+      <link>https://help.expanding.land/changelog.html</link>
+      <guid isPermaLink="false">el-update-2026-04-05</guid>
+      <pubDate>Sat, 05 Apr 2026 00:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <p><strong>New Features:</strong></p>
+        <ul>
+          <li>Live server status endpoint: <code>GET /status</code> returns real-time JSON with player count, spectators, uptime, and current map scale</li>
+          <li>LegendMod homepage and Help Center now show live ONLINE/OFFLINE badge with dynamic player counts fetched from the game server</li>
+          <li>Map scale indicator displays current map tier (1/4, 1/2, 1×, 2×, up to 8×) in real time</li>
+          <li>Status updates run on the accept thread with lock-free volatile reads — zero impact on game loop performance</li>
+        </ul>
+        <p><strong>Bug Fixes:</strong></p>
+        <ul>
+          <li>Fixed cell flickering/blinking during spectate mode — increased MAX_QUERY_NODES from 8192 to 65536 (8×) to prevent non-deterministic spatial query truncation</li>
+          <li>view_state now properly cleared on every spectate mode transition, fixing one-frame blinks caused by stale add/update classification</li>
+          <li>Full-map spectate was already immune (bypasses spatial queries) — grouped, center, and free-roam modes are now stable too</li>
+        </ul>
+      ]]></description>
+      <category>Features</category>
+      <category>Bug Fix</category>
+      <category>Spectate</category>
+    </item>
 
     <item>
       <title>April 2026 — Viewport Culling, Session Isolation &amp; OOM Protection</title>

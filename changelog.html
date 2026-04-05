@@ -105,6 +105,8 @@
         <li>LegendMod homepage now shows live ONLINE/OFFLINE badge with dynamic player counts fetched from the game server</li>
         <li>Map scale indicator: displays current map tier (1/4, 1/2, 1×, 2×, up to 8×) in real time</li>
         <li>Status updates run on the accept thread with lock-free volatile reads — zero impact on game loop performance</li>
+        <li>Fixed cell flickering/blinking during spectate — MAX_QUERY_NODES increased 8× (8192→65536) to prevent non-deterministic viewport truncation</li>
+        <li>view_state cleared on every spectate mode transition, fixing one-frame blinks from stale add/update classification</li>
       </ul>
     </article>
 
