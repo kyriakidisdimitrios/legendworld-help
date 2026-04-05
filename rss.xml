@@ -20,6 +20,33 @@
     <category>Browser Games</category>
     <ttl>1440</ttl>
 
+    <!-- ═══ News & Stories ═══ -->
+
+    <item>
+      <title>50 Bots Join the Arena — Expanding Land Beta Opens for Stress Testing</title>
+      <link>https://expanding.land/</link>
+      <guid isPermaLink="false">el-news-2026-04-05-50bots</guid>
+      <pubDate>Sat, 05 Apr 2026 19:00:00 +0000</pubDate>
+      <description><![CDATA[
+        <p><img src="https://www.legendmod.ml/banners/expanding-land-50bots.png" alt="50 bots in Expanding Land arena" style="max-width:100%;border-radius:8px;" /></p>
+        <p>For the first time in Expanding Land history, <strong>50 AI-controlled bots</strong> have been unleashed into the arena. This is a <strong>beta stress-test</strong> — the bots are here to push the server to its limits before the upcoming alpha release.</p>
+        <p>The bots spawn, eat food, split-kill, and interact with the map just like real players. They're not here to stay — they're here to help the developers find edge cases, test the new anti-flicker viewport system, and validate the server under sustained high-density load.</p>
+        <h3>What's being tested?</h3>
+        <ul>
+          <li><strong>Viewport stability</strong> — the new 65536-node query cap is being tested with 50+ entities moving simultaneously across the map</li>
+          <li><strong>Cell synchronization</strong> — verifying that view_state flushes work correctly when bots rapidly spawn, die, and respawn</li>
+          <li><strong>Map scaling</strong> — the dynamic map resizer is being exercised with rapid player count changes as bots join and leave</li>
+          <li><strong>Memory and CPU</strong> — monitoring the Hetzner CPX22 (4GB RAM, 2 vCPU) under sustained 50+ player load</li>
+        </ul>
+        <h3>What's next?</h3>
+        <p>Once the beta stress tests pass, the team will move to <strong>alpha</strong> — opening bot access to selected testers who want to practice against AI opponents before facing real players. The bots will be configurable: speed, aggression, split frequency, and target priority.</p>
+        <p>Want to watch the bots in action? Join as a <strong>spectator</strong> at <a href="https://expanding.land/">expanding.land</a> — 200+ free spectator slots are always available.</p>
+      ]]></description>
+      <category>News</category>
+      <category>Beta</category>
+      <category>Bots</category>
+    </item>
+
     <!-- ═══ Content Pages ═══ -->
 
     <item>
