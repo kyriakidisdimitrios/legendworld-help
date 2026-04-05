@@ -97,6 +97,20 @@
     <article class="entry">
       <div class="entry-header">
         <span class="version">April 2026</span>
+        <span class="date">2026-04-05</span>
+        <span class="tag tag-feature">Features</span>
+      </div>
+      <ul>
+        <li>Live server status endpoint: <code>GET /status</code> returns real-time JSON with player count, spectators, uptime, and map scale</li>
+        <li>LegendMod homepage now shows live ONLINE/OFFLINE badge with dynamic player counts fetched from the game server</li>
+        <li>Map scale indicator: displays current map tier (1/4, 1/2, 1×, 2×, up to 8×) in real time</li>
+        <li>Status updates run on the accept thread with lock-free volatile reads — zero impact on game loop performance</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-header">
+        <span class="version">April 2026</span>
         <span class="date">2026-04-03</span>
         <span class="tag tag-feature">Features</span>
         <span class="tag tag-perf">Performance</span>
