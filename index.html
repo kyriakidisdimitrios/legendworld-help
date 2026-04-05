@@ -313,6 +313,11 @@
   </noscript>
 
   <div class="legal-bar" style="border-bottom:1px solid #222">
+    <span id="hs-status" style="display:inline-flex;align-items:center;gap:5px;">
+      <span id="hs-dot" style="width:6px;height:6px;border-radius:50%;background:#ef4444;"></span>
+      <span id="hs-text" style="color:#ef4444;font-weight:600;">OFFLINE</span>
+      <span id="hs-info" style="color:#666;font-size:12px;"></span>
+    </span>
     <a href="https://expanding.land/privacy.html">Privacy Policy</a>
     <a href="https://expanding.land/terms.html">Terms of Service</a>
     <a href="https://discord.com/invite/JUfpR9k" target="_blank" rel="noopener">Discord</a>
@@ -325,5 +330,31 @@
     <a href="https://discord.com/invite/JUfpR9k" target="_blank" rel="noopener">Discord</a>
     <a href="https://expanding.land">Expanding Land</a>
   </div>
+  <script>
+  (function() {
+    var dot = document.getElementById('hs-dot');
+    var txt = document.getElementById('hs-text');
+    var info = document.getElementById('hs-info');
+    if (!dot) return;
+    function go() {
+      fetch('https://ffa.legendmod.ml:8080/status', { mode: 'cors' })
+        .then(function(r) { return r.ok ? r.json() : Promise.reject(); })
+        .then(function(d) {
+          dot.style.background = '#22c55e';
+          txt.style.color = '#22c55e';
+          txt.textContent = 'LIVE';
+          info.textContent = '· ' + (d.alive||0) + ' playing, ' + (d.spectators||0) + ' spectating';
+        })
+        .catch(function() {
+          dot.style.background = '#ef4444';
+          txt.style.color = '#ef4444';
+          txt.textContent = 'OFFLINE';
+          info.textContent = '';
+        });
+    }
+    go();
+    setInterval(go, 60000);
+  })();
+  </script>
 </body>
 </html>
