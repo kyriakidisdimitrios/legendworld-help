@@ -107,6 +107,8 @@
         <li>Status updates run on the accept thread with lock-free volatile reads — zero impact on game loop performance</li>
         <li>Fixed cell flickering/blinking during spectate — MAX_QUERY_NODES increased 8× (8192→65536) to prevent non-deterministic viewport truncation</li>
         <li>view_state cleared on every spectate mode transition, fixing one-frame blinks from stale add/update classification</li>
+        <li><strong>Fixed stale leaderboard</strong> — disconnected players/bots no longer persist on the leaderboard. Server now sends an empty leaderboard packet (count=0) when all players leave</li>
+        <li>New <a href="/embed.html">embed page</a> — gaming portals can now embed Expanding Land on their websites with a simple iframe snippet</li>
       </ul>
     </article>
 

@@ -24,6 +24,16 @@
     <!-- ═══ News & Stories ═══ -->
 
     <item>
+      <title>Leaderboard Sync Fix — No More Ghost Entries After Disconnect</title>
+      <link>https://help.expanding.land/changelog.html</link>
+      <guid isPermaLink="false">el-fix-2026-04-05-leaderboard</guid>
+      <pubDate>Sat, 05 Apr 2026 21:30:00 +0000</pubDate>
+      <category>Bug Fix</category>
+      <category>Server</category>
+      <description>Fixed a bug where disconnected players and bots would remain as stale entries on the leaderboard. The server now correctly sends an empty leaderboard packet (count=0) when all players leave, so spectators and players always see an accurate leaderboard. Previously, the client would display old cached data indefinitely until a new player joined.</description>
+    </item>
+
+    <item>
       <title>Expanding Land Now Available for Gaming Portals — Free Embed Widget</title>
       <link>https://help.expanding.land/embed.html</link>
       <guid isPermaLink="false">el-news-2026-04-05-embed</guid>
