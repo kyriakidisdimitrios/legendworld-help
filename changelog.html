@@ -97,6 +97,19 @@
     <article class="entry">
       <div class="entry-header">
         <span class="version">April 2026</span>
+        <span class="date">2026-04-06</span>
+        <span class="tag tag-fix">Fixes</span>
+      </div>
+      <ul>
+        <li><strong>Fixed spectator #1 follow flickering</strong> — viruses and cells near the viewport edge no longer blink in and out. Root cause: the grouped spectator viewbox had no true hysteresis — the same 600px padding was used for both adding and removing cells, so natural scale/center jitter from the followed player caused edge cells to oscillate between visible/invisible every tick</li>
+        <li>Implemented asymmetric hysteresis: cells enter visibility at 600px viewport padding but only leave at 1200px, creating a 600px dead zone that absorbs camera jitter</li>
+        <li>Added EMA smoothing to spectator scale (15% weight per tick) to dampen per-tick fluctuations from eating, decaying, splitting, and merging</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-header">
+        <span class="version">April 2026</span>
         <span class="date">2026-04-05</span>
         <span class="tag tag-feature">Features</span>
       </div>
