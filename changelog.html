@@ -97,6 +97,20 @@
     <article class="entry">
       <div class="entry-header">
         <span class="version">April 2026</span>
+        <span class="date">2026-04-07</span>
+        <span class="tag tag-feature">Features</span>
+        <span class="tag tag-perf">Performance</span>
+      </div>
+      <ul>
+        <li><strong>Anti-teaming system rewritten</strong> — replaced the legacy discrete event-based system (64-event array per player, 788 bytes/player) with a Delta Server-style exponential decay multiplier (single float, 8 bytes). Each teaming action bumps a multiplier; decay = base × pow(1.086, multiplier). Recovery is automatic via a compensation constant (-0.005/cycle). ~780 bytes saved per player (~800KB for 1024 players).</li>
+        <li>New config parameters: <code>at_extra_decay_base</code>, <code>at_compensation</code>, <code>at_split_loss</code>, <code>at_eject_loss</code>, <code>at_virus_pop_loss</code>, <code>at_danger_loss</code></li>
+        <li>Opcode 0xCA (202) updated to report the new multiplier value while maintaining backward-compatible wire format</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-header">
+        <span class="version">April 2026</span>
         <span class="date">2026-04-06</span>
         <span class="tag tag-fix">Fixes</span>
       </div>
@@ -182,7 +196,7 @@
         <li>720 concurrent real players per arena — zero bots</li>
         <li>Resizable map system: 0.25× to 8× dynamic scaling based on player count</li>
         <li>200+ spectator slots with free-roam camera</li>
-        <li>Anti-teaming system with discrete event-based penalty scoring</li>
+        <li>Anti-teaming system with exponential decay multiplier (Delta Server architecture)</li>
         <li>Ghost cells on death — see where you died</li>
         <li>Session stats: time alive, highest mass, food eaten, players eaten</li>
         <li>Full Legend Mod, Delta, and Agar2 compatibility</li>

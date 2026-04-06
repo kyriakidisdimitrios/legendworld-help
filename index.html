@@ -113,7 +113,7 @@
                       "name": "Does Expanding Land have an anti-teaming system?",
                       "acceptedAnswer": {
                           "@type": "Answer",
-                          "text": "Yes. Expanding Land uses an advanced discrete event-based anti-teaming system. Each action (splitting, ejecting mass, virus pops) creates an independent penalty event with its own lifespan. Old events expire naturally without being extended by new ones. When the total penalty score exceeds the threshold, decay rate increases proportionally, discouraging teaming while keeping solo play fair."
+                          "text": "Yes. Expanding Land uses an exponential multiplier-based anti-teaming system ported from Delta Server. Each player has a single decay multiplier — teaming actions (splits, W presses, virus pops, danger zone) increase the multiplier, and it naturally decreases over time via a compensation constant. The effective decay is calculated as base_decay × pow(1.086, multiplier), making the penalty grow exponentially with repeated teaming while barely affecting normal solo play."
                       }
                   },
                   {

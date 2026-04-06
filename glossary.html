@@ -299,7 +299,7 @@
 
       <div class="term" data-terms="anti-team anti team penalty decay system">
         <h3><span class="emoji">⚖️</span> Anti-Teaming</h3>
-        <p>A system that penalizes players for excessive teaming behavior. In Expanding Land, anti-teaming uses a <strong>discrete event-based penalty system</strong> — each action (virus pop, split, W press) creates a separate penalty event with its own lifespan. When your total penalty exceeds the threshold (2.8%/4s), you lose extra mass. Each event expires independently — newer actions don't extend older ones.</p>
+        <p>A system that penalizes players for excessive teaming behavior. In Expanding Land, anti-teaming uses an <strong>exponential multiplier decay system</strong> (ported from Delta Server) — each action (virus pop, split, W press) increases a single multiplier value. Your effective decay is calculated as base_decay × pow(1.086, multiplier). The multiplier naturally decreases over time via a compensation constant, so normal play recovers automatically without any timers.</p>
       </div>
 
       <div class="term" data-terms="multibox multi box multiple tabs accounts">
@@ -364,7 +364,7 @@
 
       <div class="term" data-terms="danger zone outer ring contracting shrinking penalty">
         <h3><span class="emoji">⚠️</span> Danger Zone</h3>
-        <p>When the Expanding Land map is contracting (shrinking), the outer ring becomes the "danger zone." Players with cells in this area receive anti-team penalty points (+0.4%/sec). The danger zone encourages players to move toward the center as the map shrinks, preventing edge-camping.</p>
+        <p>When the Expanding Land map is contracting (shrinking), the outer ring becomes the "danger zone." Players with cells in this area receive anti-team multiplier bumps (+0.01 per decay cycle). The danger zone encourages players to move toward the center as the map shrinks, preventing edge-camping.</p>
       </div>
 
       <div class="term" data-terms="session stats statistics death screen results">
@@ -437,7 +437,7 @@
           { "@type": "DefinedTerm", "name": "Tricksplit", "description": "Split multiple times rapidly to reach distant targets. Double or triple split for extended range kills." },
           { "@type": "DefinedTerm", "name": "Popsplit", "description": "Eat a virus intentionally then split to eat a nearby enemy using the momentum from your scattered pieces." },
           { "@type": "DefinedTerm", "name": "Multiboxing", "description": "Playing multiple accounts simultaneously. In Expanding Land, up to 4 accounts are allowed per player." },
-          { "@type": "DefinedTerm", "name": "Anti-Teaming", "description": "A system that penalizes excessive teaming with mass decay. Uses discrete event-based penalties." },
+          { "@type": "DefinedTerm", "name": "Anti-Teaming", "description": "A system that penalizes excessive teaming with exponential mass decay via a multiplier." },
           { "@type": "DefinedTerm", "name": "Mass", "description": "The size of your cell. Gained by eating food and players, lost through natural decay over time." },
           { "@type": "DefinedTerm", "name": "Dynamic Map", "description": "Expanding Land's map automatically scales from ¼× to 4× based on active player count." }
         ]

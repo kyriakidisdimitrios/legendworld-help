@@ -268,7 +268,7 @@
         <ul>
           <li>Resizable map system: ¼× to 4× dynamic scaling based on active player count</li>
           <li>200+ spectator slots with free-roam camera</li>
-          <li>Anti-teaming system using discrete event-based penalty scoring — each action (virus, split, W, danger zone) tracked independently with its own lifespan</li>
+          <li>Anti-teaming system using exponential multiplier decay (Delta Server architecture) — each action bumps a multiplier, decay = base × pow(1.086, multiplier), natural recovery via compensation constant</li>
           <li>Ghost cells on death — see exactly where you died for learning from mistakes</li>
           <li>Session stats: time alive, highest mass, food eaten, players eaten</li>
           <li>In-game chat system</li>
