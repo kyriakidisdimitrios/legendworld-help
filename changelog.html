@@ -98,6 +98,33 @@
       <div class="entry-header">
         <span class="version">April 2026</span>
         <span class="date">2026-04-07</span>
+        <span class="tag tag-fix">Fixes</span>
+      </div>
+      <ul>
+        <li><strong>Fixed spectator cell color mismatch</strong> — spectators could see a player's cells rendered with different colors after a skin loaded via login. Root cause: <code>server_invalidate_player_cells()</code> only invalidated active (alive) players' view caches, never touching spectator view state (<code>spec_view_state</code>, <code>center_spec_view_state</code>). Old cells kept the no-skin appearance while new splits showed the skin, creating a two-tone visual</li>
+        <li>Invalidation now covers all three viewer paths: individual (alive + free-roam spectators via <code>connected_ids</code>), grouped spectators, and center spectators</li>
+        <li>Also clears <code>view_state[]</code> when removing cells from <code>client_nodes</code>, ensuring the diff engine classifies re-added cells as ADD (with full skin/name) instead of UPDATE</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-header">
+        <span class="version">April 2026</span>
+        <span class="date">2026-04-07</span>
+        <span class="tag tag-perf">Performance</span>
+      </div>
+      <ul>
+        <li><strong>Deferred view_state clearing</strong> — <code>server_remove_cell()</code> no longer iterates all connected players to clear visibility state per removal. Clearing is deferred to <code>server_alloc_cell()</code> at reuse time. Eliminates O(connected × removed) random cache-cold writes per tick</li>
+        <li><strong>Single quadtree rebuild per tick</strong> — merged the two separate <code>server_rebuild_quadtree()</code> calls (post-movement and post-spawn) into a single rebuild after all mutations are complete. Saves ~0.3–0.5ms per tick at 5000+ dynamic cells</li>
+        <li><strong>Incremental food grid</strong> — added <code>fg_remove()</code> for O(1) bucket removal. Food eat/spawn now use incremental insert/remove instead of triggering a full rebuild of 4000+ entries. Full rebuild only triggers on border change (map resize)</li>
+        <li><strong>Ejected rigid body early-out</strong> — the ejected-vs-ejected push-apart loop now skips entirely when <code>moving_count == 0</code> (no cells in flight). Avoids scanning all dynamic_nodes on quiet ticks</li>
+      </ul>
+    </article>
+
+    <article class="entry">
+      <div class="entry-header">
+        <span class="version">April 2026</span>
+        <span class="date">2026-04-07</span>
         <span class="tag tag-feature">Features</span>
         <span class="tag tag-perf">Performance</span>
       </div>
