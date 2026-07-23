@@ -3,7 +3,7 @@
   <channel>
     <title>Expanding Land — Updates &amp; Changelog</title>
     <link>https://help.expanding.land/changelog.html</link>
-    <description>Latest updates, new features, bug fixes, server improvements, and community content for Expanding Land — the free IO game with 1024 players per arena and zero bots. Built entirely in C. Compatible with Legend Mod, Delta, and Agar2.</description>
+    <description>Latest updates, new features, bug fixes, server improvements, and community content for Expanding Land — the free IO game with 3840 players per arena and zero bots. Built entirely in C. Compatible with Legend Mod, Delta, and Agar2.</description>
     <language>en-us</language>
     <lastBuildDate>Sat, 05 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://help.expanding.land/rss.xml" rel="self" type="application/rss+xml"/>
@@ -40,7 +40,7 @@
       <pubDate>Sat, 05 Apr 2026 20:00:00 +0000</pubDate>
       <category>News</category>
       <category>Gaming Portals</category>
-      <description>Gaming portals and websites can now embed Expanding Land directly on their pages with a simple iframe snippet. The free IO game supports 1024 active players and 256 spectators per arena — all real humans, zero bots. Visit the embed page to copy the code and add the game to your site in seconds.</description>
+      <description>Gaming portals and websites can now embed Expanding Land directly on their pages with a simple iframe snippet. The free IO game supports 3840 active players and 256 spectators per arena — all real humans, zero bots. Visit the embed page to copy the code and add the game to your site in seconds.</description>
     </item>
 
     <item>
@@ -110,7 +110,7 @@
           <li>Mass management — decay rates, strategic ejecting</li>
           <li>Map positioning — corners vs. edges vs. center</li>
           <li>Advanced techniques — tricksplit, popsplit, bait-and-switch</li>
-          <li>Expanding Land-specific tips — dynamic map, 1024 players, spectator learning</li>
+          <li>Expanding Land-specific tips — dynamic map, 3840 players, spectator learning</li>
         </ul>
       ]]></description>
       <category>Guide</category>
@@ -128,7 +128,7 @@
           <li>The bot problem in modern IO games — fake players, hollow leaderboards</li>
           <li>Every cell in Expanding Land is controlled by a real human</li>
           <li>Real competition means every kill is a real outplay</li>
-          <li>1024 player capacity means arenas fill naturally without needing bots</li>
+          <li>3840 player capacity means arenas fill naturally without needing bots</li>
           <li>Dynamic map shrinking keeps matches dense even with fewer players</li>
           <li>Multiboxing allowed (up to 4 accounts) as a skill-based alternative to bots</li>
         </ul>
@@ -145,7 +145,7 @@
       <description><![CDATA[
         <p>A factual side-by-side comparison between Agar.io (launched 2015) and Expanding Land (launched 2026). Covers:</p>
         <ul>
-          <li>Max players — 1024 (EL) vs 200 (Agar.io)</li>
+          <li>Max players — 3840 (EL) vs 200 (Agar.io)</li>
           <li>Bots — none in EL, prevalent in Agar.io</li>
           <li>Map — dynamic ¼× to 4× scaling (EL) vs fixed size (Agar.io)</li>
           <li>Server language — Pure C (EL) vs C++ (Agar.io)</li>
@@ -260,7 +260,7 @@
         <p><strong>Server Architecture:</strong></p>
         <ul>
           <li>Entire server written from scratch in pure C</li>
-          <li>1024 concurrent real players per arena — zero bots, zero AI opponents</li>
+          <li>3840 concurrent real players per arena — zero bots, zero AI opponents</li>
           <li>Pre-allocated memory pools, split quadtree optimization for efficient spatial queries</li>
           <li>Server located in Nuremberg, Germany (Hetzner) for EU-optimized latency</li>
         </ul>
