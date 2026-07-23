@@ -7,7 +7,7 @@
   <!-- SEO -->
   <title>Expanding Land Changelog & Updates — New Features, Fixes & Improvements</title>
   <link rel="canonical" href="https://help.expanding.land/changelog.html">
-  <meta name="description" content="Expanding Land changelog — latest updates, new features, bug fixes, and server improvements for the free IO game with 1024 players per arena. Stay updated with every release.">
+  <meta name="description" content="Expanding Land changelog — latest updates, new features, bug fixes, and server improvements for the free IO game with 3840 players per arena. Stay updated with every release.">
   <meta name="keywords" content="expanding land updates, expanding land changelog, expanding land new features, expanding land patch notes, io game updates, expanding land news, expanding land version history">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="author" content="Expanding Land">
@@ -16,7 +16,7 @@
   <!-- Open Graph -->
   <meta property="og:site_name" content="Expanding Land">
   <meta property="og:title" content="Expanding Land — Changelog & Updates">
-  <meta property="og:description" content="Latest updates, features, and improvements for Expanding Land. See what's new in the world's largest IO game with 1024 players.">
+  <meta property="og:description" content="Latest updates, features, and improvements for Expanding Land. See what's new in the world's largest IO game with 3840 players.">
   <meta property="og:url" content="https://help.expanding.land/changelog.html">
   <meta property="og:image" content="https://jimboy3100.github.io/banners/expanding-land.png">
   <meta property="og:image:width" content="1200">
@@ -28,7 +28,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Expanding Land — Changelog & Updates">
-  <meta name="twitter:description" content="Latest updates and patch notes for Expanding Land IO game. 1024 players, no bots.">
+  <meta name="twitter:description" content="Latest updates and patch notes for Expanding Land IO game. 3840 players, no bots.">
   <meta name="twitter:image" content="https://jimboy3100.github.io/banners/expanding-land.png">
   <meta name="twitter:image:alt" content="Expanding Land game updates and changelog">
 
@@ -130,7 +130,7 @@
         <span class="tag tag-perf">Performance</span>
       </div>
       <ul>
-        <li><strong>Anti-teaming system rewritten</strong> — replaced the legacy discrete event-based system (64-event array per player, 788 bytes/player) with a Delta Server-style exponential decay multiplier (single float, 8 bytes). Each teaming action bumps a multiplier; decay = base × pow(1.086, multiplier). Recovery is automatic via a compensation constant (-0.005/cycle). ~780 bytes saved per player (~800KB for 1024 players).</li>
+        <li><strong>Anti-teaming system rewritten</strong> — replaced the legacy discrete event-based system (64-event array per player, 788 bytes/player) with a Delta Server-style exponential decay multiplier (single float, 8 bytes). Each teaming action bumps a multiplier; decay = base × pow(1.086, multiplier). Recovery is automatic via a compensation constant (-0.005/cycle). ~780 bytes saved per player (~3MB for 3840 players).</li>
         <li>New config parameters: <code>at_extra_decay_base</code>, <code>at_compensation</code>, <code>at_split_loss</code>, <code>at_eject_loss</code>, <code>at_virus_pop_loss</code>, <code>at_danger_loss</code></li>
         <li>Opcode 0xCA (202) updated to report the new multiplier value while maintaining backward-compatible wire format</li>
       </ul>
@@ -221,7 +221,7 @@
       </div>
       <ul>
         <li>Pure C server engine achieving ~5ms tick time (8× faster than Node.js)</li>
-        <li>720 concurrent real players per arena — zero bots</li>
+        <li>3840 concurrent real players per arena — zero bots</li>
         <li>Resizable map system: 0.25× to 8× dynamic scaling based on player count</li>
         <li>200+ spectator slots with free-roam camera</li>
         <li>Anti-teaming system with exponential decay multiplier (Delta Server architecture)</li>
@@ -240,7 +240,7 @@
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Expanding Land Changelog & Updates",
-    "description": "Latest updates, new features, and improvements for Expanding Land — the free IO game with 720 real players.",
+    "description": "Latest updates, new features, and improvements for Expanding Land — the free IO game with 3840 real players.",
     "url": "https://help.expanding.land/changelog.html",
     "isPartOf": { "@id": "https://help.expanding.land/#website" },
     "breadcrumb": {
