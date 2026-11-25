@@ -5,3 +5,7 @@ Allow: /
 
 
 Sitemap: https://help.expanding.land/sitemap.xml
+
+# LLM discovery (llms.txt standard)
+# https://help.expanding.land/llms.txt
+# https://help.expanding.land/llms-full.txt
