@@ -3,37 +3,46 @@
   "description": "Static public knowledge resources. No authentication or live session data.",
   "resources": [
     {
-      "url": "https://help.expanding.land/knowledge/features.json"
+      "url": "https://www.legendmod.ml/knowledge/features.json"
     },
     {
-      "url": "https://help.expanding.land/knowledge/game.json"
+      "url": "https://www.legendmod.ml/knowledge/game.json"
     },
     {
-      "url": "https://help.expanding.land/knowledge/mechanics.json"
+      "url": "https://www.legendmod.ml/knowledge/mechanics.json"
     },
     {
-      "url": "https://help.expanding.land/knowledge/modes.json"
+      "url": "https://www.legendmod.ml/knowledge/modes.json"
     },
     {
-      "url": "https://help.expanding.land/knowledge/controls.json"
+      "url": "https://www.legendmod.ml/knowledge/controls.json"
     },
     {
-      "url": "https://help.expanding.land/knowledge/faq.json"
+      "url": "https://www.legendmod.ml/knowledge/faq.json"
     },
     {
-      "url": "https://help.expanding.land/knowledge/resources.json"
+      "url": "https://www.legendmod.ml/knowledge/glossary.json"
     },
     {
-      "url": "https://help.expanding.land/knowledge/graph.jsonld"
+      "url": "https://www.legendmod.ml/knowledge/techniques.json"
     },
     {
-      "url": "https://help.expanding.land/knowledge/graph.ttl"
+      "url": "https://www.legendmod.ml/knowledge/settings.json"
     },
     {
-      "url": "https://help.expanding.land/knowledge/graph.rdf"
+      "url": "https://www.legendmod.ml/knowledge/resources.json"
     },
     {
-      "url": "https://help.expanding.land/knowledge/vocabulary.ttl"
+      "url": "https://www.legendmod.ml/knowledge/graph.jsonld"
+    },
+    {
+      "url": "https://www.legendmod.ml/knowledge/graph.ttl"
+    },
+    {
+      "url": "https://www.legendmod.ml/knowledge/graph.rdf"
+    },
+    {
+      "url": "https://www.legendmod.ml/knowledge/vocabulary.ttl"
     }
   ]
 }

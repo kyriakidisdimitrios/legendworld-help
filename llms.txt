@@ -13,9 +13,17 @@
 - [Best IO games 2026](https://help.expanding.land/best-io-games.html): IO games ranking.
 - [Game updates](https://help.expanding.land/changelog.html): changelog.
 - [Legend Mod](https://www.legendmod.ml/): compatible browser client and extension.
-- [Controls](https://help.expanding.land/knowledge/controls.json): default keyboard and mouse bindings.
+- [Controls](https://help.expanding.land/knowledge/controls.json): default keyboard, mouse and gamepad bindings.
 - [FAQ](https://help.expanding.land/knowledge/faq.json): frequently asked questions.
+- [Glossary (JSON)](https://help.expanding.land/knowledge/glossary.json): 30+ game terms defined.
+- [Techniques](https://help.expanding.land/knowledge/techniques.json): advanced gameplay techniques.
+- [Settings](https://help.expanding.land/knowledge/settings.json): 300+ settings across 30 categories.
+- [Features (JSON)](https://help.expanding.land/knowledge/features.json): 28 feature descriptions.
+- [Mechanics (JSON)](https://help.expanding.land/knowledge/mechanics.json): 12 core game mechanics.
+- [Resources (JSON)](https://help.expanding.land/knowledge/resources.json): 35+ official page links.
 - [Project facts](https://help.expanding.land/knowledge/): entity identifiers.
 
 - [Consolidated documentation](https://help.expanding.land/llms-full.txt): verified core facts, strategy, glossary, FAQ and links.
 - [Knowledge API](https://help.expanding.land/knowledge/api.json): public read-only JSON resources.
+- [Knowledge graph (JSON-LD)](https://help.expanding.land/knowledge/graph.jsonld): 32-entity structured data graph.
+
