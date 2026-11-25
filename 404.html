@@ -1,12 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Page Not Found — Expanding Land Help</title>
-  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="The help page you are looking for could not be found. Return to the Expanding Land Help Center.">
+  <meta name="robots" content="noindex, follow">
+  <meta name="author" content="Jimboy3100">
+  <meta name="theme-color" content="#0a0e17">
   <link rel="icon" href="https://jimboy3100.github.io/banners/expanding_ico.ico" type="image/x-icon">
   <link rel="alternate" type="application/rss+xml" title="Expanding Land Updates" href="/rss.xml">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Page Not Found — Expanding Land Help">
+  <meta property="og:description" content="The help page you are looking for could not be found. Return to the Expanding Land Help Center.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://help.expanding.land/404.html">
+  <meta property="og:site_name" content="Expanding Land Help">
+  <meta property="og:locale" content="en_US">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Page Not Found — Expanding Land Help">
+  <meta name="twitter:description" content="The help page you are looking for could not be found. Return to the Expanding Land Help Center.">
+  <!-- Dublin Core -->
+  <link rel="schema.dcterms" href="https://purl.org/dc/terms/">
+  <meta name="dcterms.title" content="Page Not Found — Expanding Land Help">
+  <meta name="dcterms.creator" content="Jimboy3100">
+  <meta name="dcterms.description" content="Error page — the requested help page could not be found on Expanding Land Help.">
+  <meta name="dcterms.publisher" content="℄ Legend Clan">
+  <meta name="dcterms.type" content="Text">
+  <meta name="dcterms.format" content="text/html">
+  <meta name="dcterms.language" content="en">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -47,6 +70,37 @@
     .cell:nth-child(3) { width: 100px; height: 100px; background: #ec4899; bottom: 15%; left: 30%; animation-delay: -10s; }
     @keyframes float { 0%, 100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-30px) scale(1.1); } }
   </style>
+  <script type="application/ld+json">
+  {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Page Not Found",
+      "description": "Error 404 — the requested help page could not be found on Expanding Land Help.",
+      "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://help.expanding.land/#website",
+          "name": "Expanding Land Help",
+          "url": "https://help.expanding.land/"
+      },
+      "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+              {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Home",
+                  "item": "https://help.expanding.land/"
+              },
+              {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Page Not Found"
+              }
+          ]
+      }
+  }
+  </script>
+  <link rel="alternate" type="application/ld+json" href="https://help.expanding.land/knowledge/graph.jsonld">
     <!-- texts in the visitor's language (Legend Mod's language packs, developers/i18n) -->
     <script src="https://www.legendmod.ml/lib/lm-i18n.js" data-areas="site-help-404" charset="utf-8"></script>
 </head>
@@ -61,8 +115,6 @@
     <p data-i18n="site.help.404.theHelpPageYou">The help page you're looking for doesn't exist. Check out the main help center or jump into the game!</p>
     <a data-i18n="site.help.404.helpCenter" href="https://help.expanding.land/" class="btn">📖 Help Center</a>
     <div class="links">
-      <a data-i18n="site.help.404.helpCenter2" href="https://help.expanding.land/">Help 
-        Center</a>
       <a data-i18n="site.help.404.strategyGuide" href="https://help.expanding.land/guide.html">Strategy Guide</a>
       <a data-i18n="site.help.404.elVsAgarIo" href="https://help.expanding.land/alternative.html">EL vs Agar.io</a>
       <a data-i18n="site.help.404.glossary" href="https://help.expanding.land/glossary.html">Glossary</a>

@@ -9,3 +9,8 @@ Sitemap: https://help.expanding.land/sitemap.xml
 # LLM discovery (llms.txt standard)
 # https://help.expanding.land/llms.txt
 # https://help.expanding.land/llms-full.txt
+
+# Knowledge graph (structured data for AI and crawlers)
+# https://help.expanding.land/knowledge/
+# https://help.expanding.land/knowledge/graph.jsonld
+# https://help.expanding.land/knowledge/api.json
