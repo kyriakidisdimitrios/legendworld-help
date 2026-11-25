@@ -220,6 +220,103 @@ https://help.expanding.land/best-io-games.html
 
 Full changelog: https://help.expanding.land/changelog.html
 
+## Legend Mod Feature Highlights (When Playing Expanding Land)
+
+Legend Mod (https://www.legendmod.ml/) is a browser client and Chrome extension that adds 28 feature categories to Expanding Land gameplay:
+
+### Controls and Input
+- **146+ configurable hotkeys** — Every action remappable, including toggle hotkeys (A-Z, Alt variants), zoom levels (Alt+1-5)
+- **50 chat command slots** — One-keypress message sending with customizable text
+- **Gamepad support** — 16 customizable buttons, dead zone, response curve, haptic vibration
+- **Scan trick** — Cursor snapping (8-32 directions) for precise positioning
+- **Line split** — Straight-line rapid multi-split (x8/x16) with configurable timing
+- **Custom macros** — 3 slots, up to 24 steps each, dry run mode
+
+### Visual Customization
+- **8 built-in theme presets** — Legend v2/v1/Original, Crazy Style 1/2, Agar.io Light/Dark, Colour-blind Safe
+- **~160 theme properties** — Colours, fonts, sizing, alpha for every game element
+- **Theme Workshop** — Create up to 30 custom themes with 5 versions, live preview with 15s auto-revert
+- **HUD Editor** — Drag/resize 15 HUD elements, 20 named layouts, grid snapping
+- **Custom skins** — PNG, JPG, GIF, SVG, video skins. IndexedDB cache (1,000 skins, 600 audio)
+- **Skin collections** — Organise skins into folders with tags and favourites
+
+### Performance and Rendering
+- **WebGL2 acceleration** with Canvas2D fallback
+- **FPS cap** (0-240), menu FPS cap (25)
+- **Adaptive performance** — 3 auto-downgrade levels when FPS drops below target
+- **Performance diagnostics** — Frame time graph, percentiles, long frames, Chrome Long Animation Frames API
+- **High DPI rendering** for crisp display on high-density screens
+
+### Information and Analytics
+- **Command Centre** — Fuzzy-search palette (Ctrl+K) for all 300+ settings. Favourites (30), recents (12), quick bar
+- **Settings Profiles** — Up to 30 named profiles, auto-switching per server/mode/input device, 5 backups
+- **Stats and analytics** — Mass graph, kill feed, death recap (20s sparkline), analytics dashboard with heatmaps
+- **Notification centre** — 200 notifications, 8 categories, filterable, mark read/clear
+- **Replay Studio** — Full replay with timeline, bookmarks, variable speed (0.25x-4x), backward seeking
+- **Match history** — Last 50 lives with mass, time, killer, server, mode
+
+### Multiplayer and Social
+- **Multiboxing** — Up to 4 connections, colour-coded rings, auto-respawn, middle camera view
+- **Second-screen companion** — BroadcastChannel live data to another window/device/OBS
+- **Spectator Director** — Auto-camera following action, watchlist, 20 map bookmarks, cinematic camera
+- **Chat system** — Images, videos, emoticons, translation, mentions, sounds, voice chat, team pings
+- **Sound mixer** — 6 channels (master, chat, commands, gameplay, video, notifications)
+
+### Accessibility and Privacy
+- **Reduced motion** preset (no death particles, entrance animations, screen shake)
+- **Text scale** (1.0-1.6x) independent of HUD
+- **Colour-blind safe preset** (Okabe-Ito palette)
+- **Streamer mode** — Hides country, chat, images, videos, dev console
+- **Practice Arena** — Offline mode against bots, personal bests with ghost replay
+
+### Extensibility
+- **User Scripts / Plugins** — 5 slots, LMPlugins API with settings registration
+- **Lab** — Experimental feature toggles, stored separately
+- **Discovery** — Feature guide cards with one-tap toggles, auto-opens after updates
+- **LMEvents API** — Hook system for user scripts to listen to game events
+
+## Default Controls (Full Reference)
+
+### Keyboard — Core Gameplay
+| Key | Action |
+|-----|--------|
+| Space | Split (divide cell into two halves, up to 16 fragments) |
+| W | Eject mass (~15-16 mass toward cursor) |
+| E | Macro feed (hold for rapid-fire) |
+| Ctrl+E | Permanent macro feed toggle |
+| Q | Double split (extended range) |
+| Alt+Q | Pop split (virus pop + split) |
+| Shift | Split into 16 (maximum) |
+| R | Pause cell movement |
+| Enter | Chat message |
+| Escape | Menu / free spectate |
+| Ctrl+K | Command Centre |
+| Tab | Toggle leaderboard |
+
+### Keyboard — Toggle Hotkeys
+| Key | Toggle |
+|-----|--------|
+| T/Alt+T | Top 5 panel / time display |
+| U/I | Split range circles / split indicators |
+| O | Opponent colours |
+| A/S | All skins / custom skins |
+| D/F | Ghost cells / food visibility |
+| G/Alt+G | Grid / minimap guides |
+| H/Alt+H | Chat / HUD |
+| K/L | Ghost cells info / copy leaderboard |
+| M/Alt+M | Mass display / minimap |
+| N/B | Names / background sectors |
+| V/X | Spectator mode / death location |
+
+### Zoom Levels
+Alt+1 (0.5) through Alt+5 (0.05)
+
+### Mouse
+Left=macro feed, Right=split, Middle=multibox swap, Mouse 4=double split, Mouse 5=16-split, Scroll=zoom
+
+### Chat Commands
+50 slots: Keys 1-0 (slots 1-10), Arrow keys (11-14), Ctrl+1-5/7-9/0 (15-23), Ctrl+Z/X/Q/M/B/L/D (24-30), plus 20 unbound
+
 ## Embedding Expanding Land
 
 Webmasters can embed Expanding Land on their sites using an iframe:
@@ -278,4 +375,9 @@ The outer ring during map contraction. Being in it adds anti-teaming penalties.
 - [Privacy policy](https://expanding.land/privacy.html)
 - [Terms of service](https://expanding.land/terms.html)
 - [Knowledge API](https://help.expanding.land/knowledge/api.json) — public read-only JSON resources
-- [Knowledge graph (JSON-LD)](https://help.expanding.land/knowledge/graph.jsonld)
+- [Knowledge graph (JSON-LD)](https://help.expanding.land/knowledge/graph.jsonld) — 32-entity structured data
+- [Glossary (JSON)](https://help.expanding.land/knowledge/glossary.json) — 30+ terms structured
+- [Techniques (JSON)](https://help.expanding.land/knowledge/techniques.json) — advanced gameplay techniques
+- [Settings (JSON)](https://help.expanding.land/knowledge/settings.json) — 300+ settings across 30 categories
+- [Extension (JSON)](https://help.expanding.land/knowledge/extension.json) — Chrome extension metadata
+- [Presets (JSON)](https://help.expanding.land/knowledge/presets.json) — theme and settings presets
