@@ -1,15 +1,21 @@
 # Expanding Land Help
 
-> Expanding Land is a free multiplayer browser cell game with a dynamic circular arena that expands and contracts, FFA and Teams modes, and a C-based server. Human and server-controlled bot populations vary by arena.
+> Official documentation for Expanding Land, a free multiplayer browser cell game with a dynamic circular arena, FFA and Teams modes, and a C-based server.
 
 ## Official resources
-- [Legend Mod](https://www.legendmod.ml/): browser client and extension.
-- [Features](https://www.legendmod.ml/features.html): settings and tools.
-- [Expanding Land](https://expanding.land/): playable game.
-- [Help](https://help.expanding.land/): official documentation.
+- [Expanding Land](https://expanding.land/): play the game.
+- [Help home](https://help.expanding.land/): documentation hub.
+- [Strategy guide](https://help.expanding.land/guide.html): how to play and advanced tips.
+- [Glossary](https://help.expanding.land/glossary.html): 40+ game terms defined.
 - [Dynamic map](https://help.expanding.land/dynamic-map.html): expansion and contraction.
 - [Players and bots](https://help.expanding.land/no-bots.html): population distinctions.
+- [EL vs Agar.io](https://help.expanding.land/alternative.html): comparison.
+- [Best IO games 2026](https://help.expanding.land/best-io-games.html): IO games ranking.
+- [Game updates](https://help.expanding.land/changelog.html): changelog.
+- [Legend Mod](https://www.legendmod.ml/): compatible browser client and extension.
+- [Controls](https://help.expanding.land/knowledge/controls.json): default keyboard and mouse bindings.
+- [FAQ](https://help.expanding.land/knowledge/faq.json): frequently asked questions.
 - [Project facts](https://help.expanding.land/knowledge/): entity identifiers.
 
-- [Consolidated documentation](https://help.expanding.land/llms-full.txt): verified core facts and links.
+- [Consolidated documentation](https://help.expanding.land/llms-full.txt): verified core facts, strategy, glossary, FAQ and links.
 - [Knowledge API](https://help.expanding.land/knowledge/api.json): public read-only JSON resources.
