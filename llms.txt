@@ -21,6 +21,8 @@
 - [Features (JSON)](https://help.expanding.land/knowledge/features.json): 28 feature descriptions.
 - [Mechanics (JSON)](https://help.expanding.land/knowledge/mechanics.json): 12 core game mechanics.
 - [Resources (JSON)](https://help.expanding.land/knowledge/resources.json): 35+ official page links.
+- [Changelog (JSON)](https://help.expanding.land/knowledge/changelog.json): server changelog highlights.
+- [Modules (JSON)](https://help.expanding.land/knowledge/modules.json): 23 modular script files.
 - [Project facts](https://help.expanding.land/knowledge/): entity identifiers.
 
 - [Consolidated documentation](https://help.expanding.land/llms-full.txt): verified core facts, strategy, glossary, FAQ and links.
