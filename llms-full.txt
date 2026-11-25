@@ -1,69 +1,281 @@
-# Legend Mod and Expanding Land
+# Expanding Land Help — Comprehensive Documentation for LLMs
 
 Updated: 2026-11-25
 
-## Legend Mod
+This is the official help and documentation site for Expanding Land, a free multiplayer browser cell game. It provides strategy guides, glossaries, gameplay mechanics explanations, changelogs, and community resources.
 
-Legend Mod is a browser client and extension project for Agar.io-style cell games, with custom skins, themes, configurable controls, multiboxing and replay tools.
+Official website: https://help.expanding.land/
+Game: https://expanding.land/
+Entity: https://expanding.land/#game
 
-Official entity: https://www.legendmod.ml/#app
+## Site Purpose
 
-- Configurable controls and hotkeys: https://www.legendmod.ml/features.html
-- Custom skins, video skins and skin tools: https://www.legendmod.ml/skins/
-- Themes and HUD customization: https://www.legendmod.ml/themes/
-- Mobile touch controls: https://www.legendmod.ml/LMmobile/
-- Gamepad support: https://www.legendmod.ml/features.html
-- Multibox controls: https://www.legendmod.ml/features.html
-- Replay tools: https://www.legendmod.ml/features.html
-- WebGL rendering and performance diagnostics: https://www.legendmod.ml/features.html
-- Settings profiles: https://www.legendmod.ml/features.html
-- Second-screen companion: https://www.legendmod.ml/companion-guide.html
+This site (help.expanding.land) serves as the official documentation hub for the Expanding Land game. It covers:
+- How to play (controls, basics, strategy)
+- Game mechanics (splitting, viruses, mass, decay, map dynamics)
+- Glossary of 40+ IO game terms
+- Dynamic map explanation (expansion/contraction)
+- Players vs bots distinction and fair play policy
+- Comparison with other IO games
+- Game changelog and updates
+- Embedding guide for webmasters
 
-## Expanding Land
+## Controls and Basics
 
-Expanding Land is a free multiplayer browser cell game with a dynamic circular arena that expands and contracts, FFA and Teams modes, and a C-based server. Human and server-controlled bot populations vary by arena.
+### Keyboard Controls
+- **Mouse**: Move cell toward cursor (smaller = faster, bigger = slower)
+- **Space**: Split — divide cell into 2 halves (up to 16 fragments), front half flies toward cursor
+- **W**: Eject mass — fire a small pellet (~15-16 mass) toward cursor
+- **Escape**: Open menu / enter free spectate
+- **Enter**: Open chat / send message
 
-Official entity: https://expanding.land/#game
+### Speed Mechanics
+Smaller cells move faster. Bigger cells are slower but can eat more. Speed advantage is crucial for survival and chasing.
 
-- Server-controlled circular arena that expands and contracts: https://help.expanding.land/dynamic-map.html
-- Collect food and consume smaller cells to grow: https://help.expanding.land/guide.html
-- Split cells as a gameplay technique: https://help.expanding.land/guide.html#splitting
-- Mass management and ejection: https://help.expanding.land/guide.html#mass
-- Human and server-controlled bot populations vary by arena: https://help.expanding.land/no-bots.html
-- Spectator mode: https://help.expanding.land/glossary.html
+## Strategy Guide
 
-### Modes
+### Early Game (First 30 Seconds)
+- Eat food pellets (dots) for +1 mass each
+- Avoid other cells — you are vulnerable when small
+- Hug the edges (safer than the centre)
+- Watch the minimap for threats
+- Do not split early — stay as one cell
 
-- Free-for-all: Competitive individual play.
-- Teams: Team-based play on supported arenas.
+### Splitting — The Core Skill
+- **When to split**: To eat a smaller player, to escape (eject mass behind then split away), to reach food clusters
+- **When NOT to split**: A bigger player is nearby, you are already split into many pieces, you are near viruses
+- **The 2.6× Rule**: You need approximately 1.3× target's mass to eat them. After splitting you have half mass, so need ~2.6× before splitting
+- **Merge timer warning**: After splitting, cells take time to merge (bigger = longer). You are vulnerable until merged.
 
-### Getting started
+### Virus Mechanics
+- **Defence**: Hide behind viruses. Bait bigger players into splitting near viruses.
+- **Offence**: Feed 7 W-presses into a virus to shoot it at a big player. This costs ~100-110 mass but can pop them into ~16 pieces.
+- Small and medium cells pass through viruses safely.
 
-Open the official game in a supported web browser, select an available arena, move your cell, collect food and learn when to split. See the strategy guide for controls and examples. Legend Mod is a separate client/extension project; the games and their publishers must not be treated as identical entities.
+### Mass Management
+- Mass decays ~0.8% every 4 seconds (bigger cells lose more)
+- Eject mass (W) strategically — to feed viruses, signal teammates, or reduce size for speed
+- Split-kill vs wait decisions: consider merge time and nearby threats
 
-### Frequently asked questions
+### Map Positioning
+- **Corners**: Death traps — avoid getting trapped against two walls
+- **Edges**: Safer, can trap smaller players against the border
+- **Centre**: High-risk/high-reward — most food and players, but most danger
+- **Expanding Land specific**: Map dynamically resizes. Small map = play aggressive (crowded). Big map = more space to roam.
 
-**Is Expanding Land the official Agar.io service?** No. It is an independent multiplayer cell game.
+### Advanced Techniques
+- **Tricksplit**: Rapid double/triple split for extended range (catches opponents off guard)
+- **Popsplit**: Deliberately hit a virus when chased, scatter your pieces and quickly recombine to eat pursuers
+- **Bait and Switch**: Fake direction, then split the opposite way
+- **Cannon/Self-feed**: Rapid W between own split cells for mass transfer
+- **Line split**: Straight-line rapid split for maximum distance
+- **Scan trick**: Snap cursor to fixed directional increments for precise positioning
 
-**Does the map change?** Yes. The server controls expansion and contraction of the circular arena.
+### Expanding Land-Specific Tips
+- Crowded arenas require more aggressive play
+- Watch for dynamic map contraction — move toward the centre when the border shrinks
+- The Danger Zone (outer ring during contraction) adds anti-teaming penalties
+- Human players and server-controlled bots are counted separately on the HUD
+- Up to 4-multibox limit
+- 200+ spectator slots with free-roam camera
+- Ghost cells show where you died (use them to avoid dangerous areas)
+- Compatible mods: Legend Mod, Delta, Agar2
 
-**Are all opponents human?** Not necessarily. Human and server-controlled bot counts vary by arena.
+### Common Mistakes
+- Splitting unnecessarily near bigger players
+- Ignoring the minimap (always check for nearby threats)
+- Chasing into ambushes (the target may have a teammate waiting)
+- Playing too passively (you need mass before it decays)
+- Forgetting merge time (don't split if you can't recombine safely)
 
-**What is the maximum player count?** Capacity depends on server configuration and should not be confused with measured concurrent human attendance. Consult current official server information.
+## Glossary — 40+ IO Game Terms
 
-## Official resources
+### Basics
+- **Cell**: The circular blob each player controls. Also called blob, player, or ball.
+- **Mass**: Size/weight of a cell, displayed as a number. Decays ~0.8% every 4 seconds.
+- **Food/Pellets**: Small coloured dots scattered across the map. +1 mass each when eaten.
+- **Leaderboard**: Ranked list of players by mass, shown at top-right corner.
+- **Spawn**: Entering the game as a new cell at a random position with starting mass.
 
-- [Legend Mod](https://www.legendmod.ml/)
-- [Play with Legend Mod](https://www.legendmod.ml/play.html)
-- [Install Chrome extension](https://chromewebstore.google.com/detail/legend-express-agario-ext/nmkhchnpjlcnicfchpkhckidmmmondja)
-- [Features](https://www.legendmod.ml/features.html)
-- [FAQ](https://www.legendmod.ml/faq.html)
-- [Release notes](https://www.legendmod.ml/changelog.html)
-- [Developers](https://www.legendmod.ml/developers/)
-- [Expanding Land](https://expanding.land/)
-- [Game help](https://help.expanding.land/)
-- [Strategy](https://help.expanding.land/guide.html)
-- [Glossary](https://help.expanding.land/glossary.html)
-- [Dynamic map](https://help.expanding.land/dynamic-map.html)
-- [Bots and fair play](https://help.expanding.land/no-bots.html)
-- [Game updates](https://help.expanding.land/changelog.html)
+### Controls and Keys
+- **Split (Space)**: Divide cell into 2 halves. Can split up to 16 fragments. Front half flies toward cursor.
+- **W (Eject Mass)**: Fire a small blob toward the cursor. Costs ~15-16 mass per press.
+- **Spectate**: Watch other players without being in the game. 200+ slots with free-roam camera in Expanding Land.
+
+### Game Mechanics
+- **Virus**: Spiky green circles. Pop big cells into ~16 pieces. Feed 7 W-presses to shoot them (~100-110 mass cost).
+- **Merge/Recombine**: Split cells rejoin after a timer. Bigger cells = longer timer.
+- **Decay**: Automatic mass loss (~0.8% every 4 seconds). Bigger cells decay faster.
+- **Ghost Cells**: Transparent cells showing the location where you died. Expanding Land-exclusive feature.
+- **Map/Arena**: The playable area. Expanding Land's map dynamically scales from 0.25× to 8× based on player count.
+
+### Advanced Techniques
+- **Tricksplit**: Rapid double/triple split covering extended range. Catches opponents by surprise.
+- **Popsplit**: Intentional virus pop combined with a split to catch pursuers.
+- **Bait-and-Switch**: Use a small split piece as bait, then split the opposite direction.
+- **Cannon/Self-Feed**: Rapid W between own split cells for fast mass transfer.
+- **Virus Shot**: Feed 7 W-presses into a virus to launch it at another player (~100-110 mass cost).
+- **Line Split**: Straight-line rapid multi-split for maximum distance covered.
+
+### Strategy and Concepts
+- **Teaming**: Two or more players cooperating. Expanding Land has an anti-teaming system with exponential decay.
+- **Anti-Teaming**: Exponential multiplier decay system: base_decay × pow(1.086, multiplier). Recovery via -0.005/cycle compensation. Excessive mass sharing triggers accelerated decay.
+- **Multiboxing**: Controlling multiple game connections simultaneously. Up to 4 accounts allowed in Expanding Land.
+- **Bots**: Server-controlled cells. Distinct from human players. In-game counters distinguish the populations.
+- **Corner Trap**: Trapping a player against the map border corner where they cannot escape.
+- **Solo/FFA**: Free-For-All — no assigned teams, every player for themselves.
+- **Slow Play**: Patient strategy — avoid unnecessary splits, wait for safe opportunities.
+
+### Community and Mods
+- **Mod/Extension**: Third-party client software. Legend Mod, Delta Mod, Agar2 are compatible with Expanding Land.
+- **Skin**: Custom cell images. Free in Expanding Land via mods like Legend Mod.
+- **Clan**: Player group with a shared tag (e.g., [LC] for Legend Clan).
+- **Private Server**: Expanding Land is built from scratch in C, supporting up to 3,840 concurrent players.
+
+### Expanding Land-Specific Terms
+- **Dynamic Map**: The arena auto-resizes from 0.25× to 8× based on player count. The server controls expansion and contraction of the circular boundary.
+- **Danger Zone**: The outer ring during map contraction. Being in it adds +0.01 to the anti-teaming multiplier per cycle.
+- **Session Stats**: Statistics tracked per life — time alive, highest mass, food eaten, players eaten.
+- **Coordinate Scrambling**: Anti-cheat system where each player receives different coordinate offsets, preventing external tools from sharing exact positions.
+- **WSS/TLS**: Encrypted WebSocket connections used by Expanding Land for secure client-server communication.
+- **Ghost Cell**: Transparent cell marking where you died. Helps identify dangerous areas.
+
+## Dynamic Map
+
+Expanding Land features a unique dynamic circular arena controlled by the server.
+
+### Expansion
+When the arena expands, additional play space becomes available. The minimap updates to reflect the new boundary. Players gain more room to manoeuvre, food density decreases, and encounters become less frequent.
+
+### Contraction
+When the arena contracts, players must move toward the remaining playable area. The boundary indicators and minimap guide players inward. The outer ring becomes a Danger Zone with anti-teaming penalties. Players caught outside the boundary are pushed inward.
+
+### Scale Range
+The map scale ranges from 0.25× (quarter of normal size — extremely crowded) to 8× (eight times normal — very spread out). The scale is displayed on the HUD and changes based on server decisions tied to player activity.
+Documentation: https://help.expanding.land/dynamic-map.html
+
+## Players, Bots and Fair Play
+
+- Arenas can contain human players AND server-controlled bots
+- In-game counters distinguish between human and bot populations
+- Counts change during play and differ by arena
+- Server-controlled bots are distinct from automated external clients (third-party automation)
+- Check the Terms of Service before using any external automation
+Documentation: https://help.expanding.land/no-bots.html
+
+## Expanding Land vs Agar.io
+
+Expanding Land is NOT Agar.io. Key differences:
+- **Map**: EL has a dynamic circular arena (0.25×-8×). Agar.io has a fixed square map.
+- **Server**: EL is built from scratch in C (~5ms tick). Agar.io uses different technology.
+- **Player count**: EL supports up to 3,840 concurrent players per arena.
+- **Spectators**: EL has 200+ spectator slots with free-roam camera.
+- **Anti-cheat**: EL uses coordinate scrambling (different offsets per player).
+- **Anti-teaming**: EL uses Delta-style exponential decay.
+- **Mod support**: EL is fully compatible with Legend Mod, Delta Mod, Agar2.
+- **Developer**: EL is by an independent developer (not Miniclip).
+Try both games and compare: https://help.expanding.land/alternative.html
+
+## Best IO Games 2026
+
+Expanding Land ranks among the top IO games in 2026, alongside Agar.io, Slither.io, Diep.io, and others. The full ranking of 15 games with comparison tables is available at:
+https://help.expanding.land/best-io-games.html
+
+## Game Changelog Highlights (2026)
+
+### August 2026
+- Cinematic death sequence (particle bursts, eater pulse, camera shake, 600ms absorption animation)
+- Virus jelly physics (dynamic spring physics + jagged spikes)
+- Client connection and skin loading stability improvements
+
+### April 2026
+- Anti-teaming rewrite: Delta Server-style exponential decay (8 bytes vs 788 bytes/player)
+- Live /status endpoint (player count, spectators, uptime, map scale)
+- Live ONLINE/OFFLINE badge on help site
+- Map scale indicator (0.25× to 8×)
+- Quadtree MAX_QUERY_NODES 8,192→65,536
+- Single quadtree rebuild per tick (saves ~0.3-0.5ms at 5000+ cells)
+- Incremental food grid with O(1) bucket removal
+- Viewport culling (only visible nodes)
+- Spectator #1 follow flickering fix
+- EMA smoothing on spectator scale
+
+### March 2026
+- Cell merging stabilised
+- Mobile touch controls restored
+- Multibox auto-spectate fix
+- Full Map spectate button
+- Login disconnects fixed
+- Encrypted WebSocket enforced
+
+### Earlier (2025-2026)
+- Pure C server engine (~5ms tick, 8× faster than Node.js)
+- 3,840 concurrent real players per arena
+- Resizable map 0.25× to 8×
+- 200+ spectator slots with free-roam
+- Ghost cells, session stats
+- Full Legend Mod/Delta/Agar2 compatibility
+- Android APK support
+- Discord OAuth login
+
+Full changelog: https://help.expanding.land/changelog.html
+
+## Embedding Expanding Land
+
+Webmasters can embed Expanding Land on their sites using an iframe:
+- Recommended sizes: Full Page, Large (960×600), Medium (800×500), Sidebar (400×600)
+- Features: multiplayer arena, 256 spectator slots, dynamic map, no login required, 0.25×-8× map, anti-cheat, no ads, encrypted (WSS/TLS)
+Documentation: https://help.expanding.land/embed.html
+
+## Frequently Asked Questions
+
+**What is Expanding Land?**
+A free multiplayer browser cell game with a dynamic circular arena, FFA and Teams modes, and a C-based server engine.
+
+**Is Expanding Land the official Agar.io service?**
+No. It is an independent game built from scratch by a different developer.
+
+**Does the map change?**
+Yes. The server controls expansion and contraction of the circular arena (0.25× to 8×).
+
+**Are all opponents human?**
+Not necessarily. Human and server-controlled bot counts vary by arena. In-game counters distinguish populations.
+
+**What is the maximum player count?**
+Up to 3,840 concurrent real players per arena.
+
+**Is it free?**
+Yes. No subscription or payment required. Guest play available.
+
+**How do I spectate?**
+Press Escape while alive. 200+ spectator slots with free-roam camera.
+
+**What mods are compatible?**
+Legend Mod (legendmod.ml), Delta Mod (deltio.pages.dev), and Agar2 (agar2.com).
+
+**What is the dynamic map?**
+The arena is circular and auto-resizes (0.25× to 8×) based on player count. It expands when players increase and contracts when they decrease.
+
+**What is the Danger Zone?**
+The outer ring during map contraction. Being in it adds anti-teaming penalties.
+
+## Official Resources
+
+- [Expanding Land](https://expanding.land/) — play the game
+- [Help home](https://help.expanding.land/) — documentation hub
+- [Strategy guide](https://help.expanding.land/guide.html) — how to play
+- [Glossary](https://help.expanding.land/glossary.html) — 40+ game terms
+- [Dynamic map](https://help.expanding.land/dynamic-map.html) — map mechanics
+- [Bots and fair play](https://help.expanding.land/no-bots.html) — player vs bot info
+- [EL vs Agar.io](https://help.expanding.land/alternative.html) — comparison
+- [Best IO games 2026](https://help.expanding.land/best-io-games.html) — IO games ranking
+- [Game updates](https://help.expanding.land/changelog.html) — changelog
+- [Embed widget](https://help.expanding.land/embed.html) — embed the game
+- [Browser guide](https://help.expanding.land/unblocked.html) — device and network guide
+- [Legend Mod](https://www.legendmod.ml/) — compatible client extension
+- [Chrome extension](https://chromewebstore.google.com/detail/legend-express-agario-ext/nmkhchnpjlcnicfchpkhckidmmmondja)
+- [Discord](https://discord.com/invite/JUfpR9k)
+- [Privacy policy](https://expanding.land/privacy.html)
+- [Terms of service](https://expanding.land/terms.html)
+- [Knowledge API](https://help.expanding.land/knowledge/api.json) — public read-only JSON resources
+- [Knowledge graph (JSON-LD)](https://help.expanding.land/knowledge/graph.jsonld)
