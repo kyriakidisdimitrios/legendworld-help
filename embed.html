@@ -91,25 +91,30 @@
     .badge-free { background: #22c55e20; color: #22c55e; border: 1px solid #22c55e40; }
     .badge-nobots { background: #ef444420; color: #ef4444; border: 1px solid #ef444440; }
   </style>
+    <!-- texts in the visitor's language (Legend Mod's language packs, developers/i18n) -->
+    <script src="https://www.legendmod.ml/lib/lm-i18n.js" data-areas="site-help-embed" charset="utf-8"></script>
 </head>
 <body>
+  <!-- the page language (Legend Mod's language packs); the choice is saved on this site and passed to Legend pages -->
+  <div class="lm-lang-bar" style="text-align:right;padding:6px 12px;font-size:14px;line-height:1.4"><span data-lm-lang-picker></span></div>
+
   <div class="container">
-    <h1>Embed Expanding Land</h1>
-    <p class="subtitle">
+    <h1 data-i18n="site.help.embed.embedExpandingLand">Embed Expanding Land</h1>
+    <p data-i18n-html="site.help.embed.addTheFreeIo" class="subtitle">
       Add the free IO game to your website or gaming portal.
       <span class="badge badge-free">100% FREE</span>
       <span class="badge badge-nobots">MULTIPLAYER</span>
     </p>
 
-    <h2>🎮 Live Preview</h2>
+    <h2 data-i18n="site.help.embed.livePreview">🎮 Live Preview</h2>
     <div class="preview">
-      <iframe src="https://expanding.land/" title="Expanding Land — Free IO Game" allowfullscreen></iframe>
+      <iframe src="https://expanding.land/" title="Expanding Land — Free IO Game" data-i18n-title="site.help.embed.previewTitle" data-lm-lang-frame allowfullscreen></iframe>
     </div>
 
-    <h2>📋 Copy This Code</h2>
+    <h2 data-i18n="site.help.embed.copyThisCode">📋 Copy This Code</h2>
     <div class="code-box" id="embed-default">
-      <button class="copy-btn" onclick="copyCode('embed-default')">Copy</button>
-      <code>&lt;iframe
+      <button data-i18n="site.help.embed.copy" class="copy-btn" onclick="copyCode('embed-default')">Copy</button>
+      <code data-i18n="site.help.embed.text">&lt;iframe
   src="https://expanding.land/"
   title="Expanding Land — Free IO Game with a Dynamic Map"
   width="960" height="600"
@@ -118,30 +123,30 @@
 &lt;/iframe&gt;</code>
     </div>
 
-    <h2>📐 Recommended Sizes</h2>
+    <h2 data-i18n="site.help.embed.recommendedSizes">📐 Recommended Sizes</h2>
     <div class="sizes">
       <div class="size-card">
-        <h3>Full Page</h3>
-        <p>width="100%" height="100vh"</p>
+        <h3 data-i18n="site.help.embed.fullPage">Full Page</h3>
+        <p data-i18n="site.help.embed.width100Height100vh">width="100%" height="100vh"</p>
       </div>
       <div class="size-card">
-        <h3>Large Widget</h3>
+        <h3 data-i18n="site.help.embed.largeWidget">Large Widget</h3>
         <p>960 × 600 px</p>
       </div>
       <div class="size-card">
-        <h3>Medium Widget</h3>
+        <h3 data-i18n="site.help.embed.mediumWidget">Medium Widget</h3>
         <p>800 × 500 px</p>
       </div>
       <div class="size-card">
-        <h3>Sidebar</h3>
+        <h3 data-i18n="site.help.embed.sidebar">Sidebar</h3>
         <p>400 × 600 px</p>
       </div>
     </div>
 
-    <h2>🎯 Full Page Embed</h2>
+    <h2 data-i18n="site.help.embed.fullPageEmbed">🎯 Full Page Embed</h2>
     <div class="code-box" id="embed-fullpage">
-      <button class="copy-btn" onclick="copyCode('embed-fullpage')">Copy</button>
-      <code>&lt;iframe
+      <button data-i18n="site.help.embed.copy" class="copy-btn" onclick="copyCode('embed-fullpage')">Copy</button>
+      <code data-i18n="site.help.embed.text2">&lt;iframe
   src="https://expanding.land/"
   title="Expanding Land — Free IO Game"
   style="position:fixed; top:0; left:0; width:100%; height:100%; border:none; z-index:9999;"
@@ -149,48 +154,50 @@
 &lt;/iframe&gt;</code>
     </div>
 
-    <h2>✨ What Your Visitors Get</h2>
+    <h2 data-i18n="site.help.embed.whatYourVisitorsGet">✨ What Your Visitors Get</h2>
     <div class="features">
-      <div class="feature"><strong>Multiplayer arena</strong> — population varies</div>
-      <div class="feature"><strong>256 Spectator Slots</strong> — viewers can watch live gameplay</div>
-      <div class="feature"><strong>Dynamic map</strong> — expands and contracts</div>
-      <div class="feature"><strong>No Login Required</strong> — play instantly as a guest</div>
-      <div class="feature"><strong>Dynamic Map</strong> — resizable 0.25× to 8× based on player count</div>
-      <div class="feature"><strong>Anti-Cheat</strong> — coordinate scrambling protects fair play</div>
-      <div class="feature"><strong>No Ads</strong> — clean, distraction-free gameplay</div>
-      <div class="feature"><strong>Encrypted</strong> — WSS/TLS secure connections</div>
+      <div data-i18n-html="site.help.embed.multiplayerArenaPopulationVaries" class="feature"><strong>Multiplayer arena</strong> — population varies</div>
+      <div data-i18n-html="site.help.embed.spectatorSlotsViewersCan" class="feature"><strong>256 Spectator Slots</strong> — viewers can watch live gameplay</div>
+      <div data-i18n-html="site.help.embed.dynamicMapExpandsAnd" class="feature"><strong>Dynamic map</strong> — expands and contracts</div>
+      <div data-i18n-html="site.help.embed.noLoginRequiredPlay" class="feature"><strong>No Login Required</strong> — play instantly as a guest</div>
+      <div data-i18n-html="site.help.embed.dynamicMapResizable0" class="feature"><strong>Dynamic Map</strong> — resizable 0.25× to 8× based on player count</div>
+      <div data-i18n-html="site.help.embed.antiCheatCoordinateScrambling" class="feature"><strong>Anti-Cheat</strong> — coordinate scrambling protects fair play</div>
+      <div data-i18n-html="site.help.embed.noAdsCleanDistraction" class="feature"><strong>No Ads</strong> — clean, distraction-free gameplay</div>
+      <div data-i18n-html="site.help.embed.encryptedWssTlsSecure" class="feature"><strong>Encrypted</strong> — WSS/TLS secure connections</div>
     </div>
 
-    <h2>🔗 Text Link</h2>
+    <h2 data-i18n="site.help.embed.textLink">🔗 Text Link</h2>
     <div class="code-box" id="embed-link">
-      <button class="copy-btn" onclick="copyCode('embed-link')">Copy</button>
-      <code>&lt;a href="https://expanding.land/" target="_blank"&gt;
+      <button data-i18n="site.help.embed.copy" class="copy-btn" onclick="copyCode('embed-link')">Copy</button>
+      <code data-i18n="site.help.embed.playExpandingLandFree">&lt;a href="https://expanding.land/" target="_blank"&gt;
   Play Expanding Land — Free IO Game with a Dynamic Map
 &lt;/a&gt;</code>
     </div>
 
-    <h2>🖼️ Banner Link</h2>
+    <h2 data-i18n="site.help.embed.bannerLink">🖼️ Banner Link</h2>
     <div class="code-box" id="embed-banner">
-      <button class="copy-btn" onclick="copyCode('embed-banner')">Copy</button>
-      <code>&lt;a href="https://expanding.land/" target="_blank"&gt;
+      <button data-i18n="site.help.embed.copy" class="copy-btn" onclick="copyCode('embed-banner')">Copy</button>
+      <code data-i18n="site.help.embed.text3">&lt;a href="https://expanding.land/" target="_blank"&gt;
   &lt;img src="https://www.legendmod.ml/banners/expanding-land.png"
        alt="Expanding Land — Free IO Game"
        style="max-width:100%; border-radius:12px;"&gt;
 &lt;/a&gt;</code>
     </div>
 
-    <a href="/" class="back">← Back to Help Center</a>
+    <a data-i18n="site.help.embed.backToHelpCenter" href="/" class="back">← Back to Help Center</a>
   </div>
 
   <script>
+    /* texts in the visitor's language (developers/i18n in Legend Mod); English when they did not load */
+    var _t = function (k, en) { var s = window.lmT ? window.lmT(k) : ''; return s && s !== k ? s : en; };
     function copyCode(id) {
       const box = document.getElementById(id);
       const code = box.querySelector('code').textContent;
       navigator.clipboard.writeText(code).then(() => {
         const btn = box.querySelector('.copy-btn');
-        btn.textContent = 'Copied!';
+        btn.textContent = _t('site.help.embed.copied', 'Copied!');
         btn.classList.add('copied');
-        setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+        setTimeout(() => { btn.textContent = _t('site.help.embed.copy', 'Copy'); btn.classList.remove('copied'); }, 2000);
       });
     }
   </script>

@@ -47,21 +47,26 @@
     .cell:nth-child(3) { width: 100px; height: 100px; background: #ec4899; bottom: 15%; left: 30%; animation-delay: -10s; }
     @keyframes float { 0%, 100% { transform: translateY(0) scale(1); } 50% { transform: translateY(-30px) scale(1.1); } }
   </style>
+    <!-- texts in the visitor's language (Legend Mod's language packs, developers/i18n) -->
+    <script src="https://www.legendmod.ml/lib/lm-i18n.js" data-areas="site-help-404" charset="utf-8"></script>
 </head>
 <body>
+  <!-- the page language (Legend Mod's language packs); the choice is saved on this site and passed to Legend pages -->
+  <div class="lm-lang-bar" style="text-align:right;padding:6px 12px;font-size:14px;line-height:1.4"><span data-lm-lang-picker></span></div>
+
   <div class="cell"></div><div class="cell"></div><div class="cell"></div>
   <div class="container">
     <div class="code">404</div>
-    <h1>This cell got eaten!</h1>
-    <p>The help page you're looking for doesn't exist. Check out the main help center or jump into the game!</p>
-    <a href="https://help.expanding.land/" class="btn">📖 Help Center</a>
+    <h1 data-i18n="site.help.404.thisCellGotEaten">This cell got eaten!</h1>
+    <p data-i18n="site.help.404.theHelpPageYou">The help page you're looking for doesn't exist. Check out the main help center or jump into the game!</p>
+    <a data-i18n="site.help.404.helpCenter" href="https://help.expanding.land/" class="btn">📖 Help Center</a>
     <div class="links">
-      <a href="https://help.expanding.land/">Help 
+      <a data-i18n="site.help.404.helpCenter2" href="https://help.expanding.land/">Help 
         Center</a>
-      <a href="https://help.expanding.land/guide.html">Strategy Guide</a>
-      <a href="https://help.expanding.land/alternative.html">EL vs Agar.io</a>
-      <a href="https://help.expanding.land/glossary.html">Glossary</a>
-      <a href="https://expanding.land/">Play Game</a>
+      <a data-i18n="site.help.404.strategyGuide" href="https://help.expanding.land/guide.html">Strategy Guide</a>
+      <a data-i18n="site.help.404.elVsAgarIo" href="https://help.expanding.land/alternative.html">EL vs Agar.io</a>
+      <a data-i18n="site.help.404.glossary" href="https://help.expanding.land/glossary.html">Glossary</a>
+      <a data-i18n="site.help.404.playGame" href="https://expanding.land/">Play Game</a>
     </div>
   </div>
 </body>

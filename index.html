@@ -191,10 +191,12 @@
     }
   </style>
 <link rel="alternate" type="application/ld+json" href="https://help.expanding.land/knowledge/graph.jsonld">
+    <!-- texts in the visitor's language (Legend Mod's language packs, developers/i18n) -->
+    <script src="https://www.legendmod.ml/lib/lm-i18n.js" data-areas="site-help" charset="utf-8"></script>
 </head>
 <body>
   <!-- SEO: H1 (visually hidden for crawlers) -->
-  <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Expanding Land Help and Game Guide</h1>
+  <h1 data-i18n="site.help.expandingLandHelpAnd" style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Expanding Land Help and Game Guide</h1>
 
   <!-- SEO: noscript fallback for crawlers that don't execute JS/iframes -->
   <noscript>
@@ -255,17 +257,18 @@
       <span id="hs-text" style="color:#ef4444;font-weight:600;">OFFLINE</span>
       <span id="hs-info" style="color:#666;font-size:12px;"></span>
     </span>
-    <a href="/guide.html">Guide</a> <a href="/dynamic-map.html">Dynamic map</a> <a href="/knowledge/">Project facts</a>
-    <a href="https://expanding.land/privacy.html">Privacy Policy</a>
-    <a href="https://expanding.land/terms.html">Terms of Service</a>
+    <span data-lm-lang-picker></span>
+    <a data-i18n="site.help.guide" href="/guide.html">Guide</a> <a data-i18n="site.help.dynamicMap" href="/dynamic-map.html">Dynamic map</a> <a data-i18n="site.help.projectFacts" href="/knowledge/">Project facts</a>
+    <a data-i18n="site.help.privacyPolicy" href="https://expanding.land/privacy.html">Privacy Policy</a>
+    <a data-i18n="site.help.termsOfService" href="https://expanding.land/terms.html">Terms of Service</a>
     <a href="https://discord.com/invite/JUfpR9k" target="_blank" rel="noopener">Discord</a>
     <a href="https://expanding.land">Expanding Land</a>
   </div>
-  <iframe src="https://jimboy3100.github.io/extras/legendffa.html" allowfullscreen loading="eager"></iframe>
+  <iframe src="https://jimboy3100.github.io/extras/legendffa.html" data-lm-lang-frame allowfullscreen loading="eager"></iframe>
   <div class="legal-bar">
-    <a href="/guide.html">Guide</a> <a href="/dynamic-map.html">Dynamic map</a> <a href="/knowledge/">Project facts</a>
-    <a href="https://expanding.land/privacy.html">Privacy Policy</a>
-    <a href="https://expanding.land/terms.html">Terms of Service</a>
+    <a data-i18n="site.help.guide" href="/guide.html">Guide</a> <a data-i18n="site.help.dynamicMap" href="/dynamic-map.html">Dynamic map</a> <a data-i18n="site.help.projectFacts" href="/knowledge/">Project facts</a>
+    <a data-i18n="site.help.privacyPolicy" href="https://expanding.land/privacy.html">Privacy Policy</a>
+    <a data-i18n="site.help.termsOfService" href="https://expanding.land/terms.html">Terms of Service</a>
     <a href="https://discord.com/invite/JUfpR9k" target="_blank" rel="noopener">Discord</a>
     <a href="https://expanding.land">Expanding Land</a>
   </div>
@@ -275,20 +278,29 @@
     var txt = document.getElementById('hs-text');
     var info = document.getElementById('hs-info');
     if (!dot) return;
+    /* texts in the visitor's language (developers/i18n in Legend Mod); English when they did not load */
+    var _t = function (k, en) { var s = window.lmT ? window.lmT(k) : ''; return s && s !== k ? s : en; };
+    var last = null;
+    function show() {
+      txt.textContent = last ? _t('site.help.live', 'LIVE') : _t('site.help.offline', 'OFFLINE');
+      info.textContent = last ? _t('site.help.playersSpectators', '· {0} playing, {1} spectating').replace('{0}', last.alive || 0).replace('{1}', last.spectators || 0) : '';
+    }
+    if (window.LMi18n) window.LMi18n.onChange(show);
+    show();
     function go() {
       fetch('https://ffa.legendmod.ml:8080/status', { mode: 'cors' })
         .then(function(r) { return r.ok ? r.json() : Promise.reject(); })
         .then(function(d) {
           dot.style.background = '#22c55e';
           txt.style.color = '#22c55e';
-          txt.textContent = 'LIVE';
-          info.textContent = '· ' + (d.alive||0) + ' playing, ' + (d.spectators||0) + ' spectating';
+          last = d || {};
+          show();
         })
         .catch(function() {
           dot.style.background = '#ef4444';
           txt.style.color = '#ef4444';
-          txt.textContent = 'OFFLINE';
-          info.textContent = '';
+          last = null;
+          show();
         });
     }
     go();
