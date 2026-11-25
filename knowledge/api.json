@@ -1,0 +1,33 @@
+{
+  "updated": "2026-11-25",
+  "description": "Static public knowledge resources. No authentication or live session data.",
+  "resources": [
+    {
+      "url": "https://help.expanding.land/knowledge/features.json"
+    },
+    {
+      "url": "https://help.expanding.land/knowledge/game.json"
+    },
+    {
+      "url": "https://help.expanding.land/knowledge/mechanics.json"
+    },
+    {
+      "url": "https://help.expanding.land/knowledge/modes.json"
+    },
+    {
+      "url": "https://help.expanding.land/knowledge/resources.json"
+    },
+    {
+      "url": "https://help.expanding.land/knowledge/graph.jsonld"
+    },
+    {
+      "url": "https://help.expanding.land/knowledge/graph.ttl"
+    },
+    {
+      "url": "https://help.expanding.land/knowledge/graph.rdf"
+    },
+    {
+      "url": "https://help.expanding.land/knowledge/vocabulary.ttl"
+    }
+  ]
+}
