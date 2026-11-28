@@ -18,7 +18,7 @@
       "description": "Legend Mod is a browser client and extension project for Agar.io-style cell games, with custom skins, themes, configurable controls, multiboxing and replay tools.",
       "applicationCategory": "GameApplication",
       "operatingSystem": "Web browser",
-      "softwareVersion": "3.629",
+      "softwareVersion": "3.702",
       "inLanguage": [
         "en",
         "ar",
@@ -47,10 +47,7 @@
         "Replay tools",
         "Gamepad support",
         "Mobile touch controls",
-        "Settings profiles",
-        "Performance diagnostics",
-        "Adaptive performance",
-        "Second-screen companion",
+        "WebGL rendering",
         "Chat system",
         "HUD helpers",
         "Accessibility features",
@@ -90,9 +87,6 @@
           "@id": "https://www.legendmod.ml/knowledge/#feature-performance"
         },
         {
-          "@id": "https://www.legendmod.ml/knowledge/#feature-companion"
-        },
-        {
           "@id": "https://www.legendmod.ml/knowledge/#feature-accessibility"
         }
       ]
@@ -104,7 +98,7 @@
       "description": "Chrome extension for Legend Mod. Adds custom skins, themes, controls and more to Agar.io-style games. Does NOT collect, store or transmit personal data externally.",
       "applicationCategory": "BrowserExtension",
       "operatingSystem": "Chrome",
-      "softwareVersion": "1.8.4",
+      "softwareVersion": "1.8.5",
       "installUrl": "https://chromewebstore.google.com/detail/legend-express-agario-ext/nmkhchnpjlcnicfchpkhckidmmmondja",
       "browserRequirements": "Google Chrome",
       "permissions": [
@@ -261,7 +255,7 @@
         "lm:Feature"
       ],
       "name": "Custom skins, video skins and skin tools",
-      "description": "Custom image URLs, video skins, skin collections, skin checker, IndexedDB cache."
+      "description": "Custom image URLs, video skins, skin checker, IndexedDB cache."
     },
     {
       "@id": "https://www.legendmod.ml/knowledge/#feature-themes",
@@ -270,7 +264,7 @@
         "lm:Feature"
       ],
       "name": "Themes and HUD customization",
-      "description": "CSS variable-based themes, 8 presets, Theme Workshop with live preview."
+      "description": "CSS variable-based themes, 8 presets, Theme Workshop with live preview and Compare."
     },
     {
       "@id": "https://www.legendmod.ml/knowledge/#feature-commandcentre",
@@ -288,7 +282,7 @@
         "lm:Feature"
       ],
       "name": "Multibox controls",
-      "description": "Control up to 4 connections with colour-coded rings and middle camera view."
+      "description": "Control up to 4 connections with a ring on the controlled unit and middle camera view."
     },
     {
       "@id": "https://www.legendmod.ml/knowledge/#feature-replays",
@@ -297,7 +291,7 @@
         "lm:Feature"
       ],
       "name": "Replay tools",
-      "description": "Packet recording, instant replay, Replay Studio, match history, personal bests."
+      "description": "Packet recording, Replay Studio, match history, personal bests."
     },
     {
       "@id": "https://www.legendmod.ml/knowledge/#feature-gamepad",
@@ -314,17 +308,8 @@
         "DefinedTerm",
         "lm:Feature"
       ],
-      "name": "Performance diagnostics",
-      "description": "WebGL2 acceleration, adaptive performance, FPS cap, diagnostics window."
-    },
-    {
-      "@id": "https://www.legendmod.ml/knowledge/#feature-companion",
-      "@type": [
-        "DefinedTerm",
-        "lm:Feature"
-      ],
-      "name": "Second-screen companion",
-      "description": "Broadcast live game state to a second window via BroadcastChannel."
+      "name": "WebGL rendering",
+      "description": "WebGL2 acceleration, FPS cap."
     },
     {
       "@id": "https://www.legendmod.ml/knowledge/#feature-accessibility",
@@ -333,7 +318,7 @@
         "lm:Feature"
       ],
       "name": "Accessibility features",
-      "description": "Reduced motion, text scale, HUD text scale, opponent indicators, colour-blind preset."
+      "description": "Reduced motion, text scale, HUD text scale, colour-blind preset."
     },
     {
       "@id": "https://help.expanding.land/knowledge/#mechanic-dynamic-map",

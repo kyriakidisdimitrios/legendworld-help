@@ -84,12 +84,12 @@
     },
     {
       "term": "Line split",
-      "definition": "A straight-line rapid multi-split (x8 or x16) in a straight line toward the cursor. Configurable timing (delay between splits) and lock duration.",
+      "definition": "A straight-line rapid multi-split (x8 or x16) in a straight line toward the cursor. Configurable splits per press and lock duration.",
       "category": "techniques"
     },
     {
       "term": "Scan trick",
-      "definition": "A movement technique where cursor position snaps to fixed directional increments (8-32 directions). Allows precise cell positioning for split tricks.",
+      "definition": "A movement technique: while its key is held the cell heads far toward the cursor direction; with the left mouse button held too, the direction snaps to one of 16. Allows precise cell positioning for split tricks.",
       "category": "techniques"
     },
     {
@@ -129,12 +129,7 @@
     },
     {
       "term": "Theme Workshop",
-      "definition": "A tool to create, save, rename, copy and delete custom themes. Supports up to 30 themes with 5 versions each, live preview with auto-revert.",
-      "category": "el-specific"
-    },
-    {
-      "term": "Settings Profile",
-      "definition": "A named snapshot of all gameplay and visual settings that can be switched instantly. Supports up to 30 profiles, auto-switching per server/mode/input device.",
+      "definition": "The window of your own saved themes (Theme tab, button at its top): up to 30 themes with 5 versions each, live preview with auto-revert, Compare and a gallery.",
       "category": "el-specific"
     },
     {

@@ -7,19 +7,19 @@
   schema:description "Legend Mod is a browser client and extension project for Agar.io-style cell games, with custom skins, themes, configurable controls, multiboxing and replay tools." ;
   schema:applicationCategory "GameApplication" ;
   schema:operatingSystem "Web browser" ;
-  schema:softwareVersion "3.629" ;
+  schema:softwareVersion "3.702" ;
   schema:inLanguage "en", "ar", "bg", "de", "el", "es", "fr", "id", "it", "ja", "nl", "pl", "pt", "ru", "tr", "zh" ;
-  schema:featureList "Custom skins", "Video skins", "Themes", "Configurable controls", "Command Centre", "Multiboxing", "Replay tools", "Gamepad support", "Mobile touch controls", "Settings profiles", "Performance diagnostics", "Adaptive performance", "Second-screen companion", "Chat system", "HUD helpers", "Accessibility features", "Streamer mode" ;
+  schema:featureList "Custom skins", "Video skins", "Themes", "Configurable controls", "Multiboxing", "Replay tools", "Gamepad support", "Mobile touch controls", "WebGL rendering", "Chat system", "HUD helpers", "Accessibility features", "Streamer mode" ;
   schema:offers [ a schema:Offer ; schema:price "0" ; schema:priceCurrency "USD" ] ;
   schema:isRelatedTo <https://expanding.land/#game> ;
-  lm:hasFeature <https://www.legendmod.ml/knowledge/#feature-controls>, <https://www.legendmod.ml/knowledge/#feature-skins>, <https://www.legendmod.ml/knowledge/#feature-themes>, <https://www.legendmod.ml/knowledge/#feature-commandcentre>, <https://www.legendmod.ml/knowledge/#feature-multibox>, <https://www.legendmod.ml/knowledge/#feature-replays>, <https://www.legendmod.ml/knowledge/#feature-gamepad>, <https://www.legendmod.ml/knowledge/#feature-performance>, <https://www.legendmod.ml/knowledge/#feature-companion>, <https://www.legendmod.ml/knowledge/#feature-accessibility> .
+  lm:hasFeature <https://www.legendmod.ml/knowledge/#feature-controls>, <https://www.legendmod.ml/knowledge/#feature-skins>, <https://www.legendmod.ml/knowledge/#feature-themes>, <https://www.legendmod.ml/knowledge/#feature-multibox>, <https://www.legendmod.ml/knowledge/#feature-replays>, <https://www.legendmod.ml/knowledge/#feature-gamepad>, <https://www.legendmod.ml/knowledge/#feature-performance>, <https://www.legendmod.ml/knowledge/#feature-accessibility> .
 
 <https://www.legendmod.ml/#extension> a schema:SoftwareApplication ;
   schema:name "Legend Express" ;
   schema:description "Chrome extension for Legend Mod. Adds custom skins, themes, controls and more to Agar.io-style games. Does NOT collect, store or transmit personal data externally." ;
   schema:applicationCategory "BrowserExtension" ;
   schema:operatingSystem "Chrome" ;
-  schema:softwareVersion "1.8.4" ;
+  schema:softwareVersion "1.8.5" ;
   schema:installUrl <https://chromewebstore.google.com/detail/legend-express-agario-ext/nmkhchnpjlcnicfchpkhckidmmmondja> ;
   schema:browserRequirements "Google Chrome" ;
   schema:offers [ a schema:Offer ; schema:price "0" ; schema:priceCurrency "USD" ] ;
@@ -69,11 +69,11 @@
 
 <https://www.legendmod.ml/knowledge/#feature-skins> a schema:DefinedTerm, lm:Feature ;
   schema:name "Custom skins, video skins and skin tools" ;
-  schema:description "Custom image URLs, video skins, skin collections, skin checker, IndexedDB cache." .
+  schema:description "Custom image URLs, video skins, skin checker, IndexedDB cache." .
 
 <https://www.legendmod.ml/knowledge/#feature-themes> a schema:DefinedTerm, lm:Feature ;
   schema:name "Themes and HUD customization" ;
-  schema:description "CSS variable-based themes, 8 presets, Theme Workshop with live preview." .
+  schema:description "CSS variable-based themes, 8 presets, Theme Workshop with live preview and Compare." .
 
 <https://www.legendmod.ml/knowledge/#feature-commandcentre> a schema:DefinedTerm, lm:Feature ;
   schema:name "Command Centre" ;
@@ -81,27 +81,23 @@
 
 <https://www.legendmod.ml/knowledge/#feature-multibox> a schema:DefinedTerm, lm:Feature ;
   schema:name "Multibox controls" ;
-  schema:description "Control up to 4 connections with colour-coded rings and middle camera view." .
+  schema:description "Control up to 4 connections with a ring on the controlled unit and middle camera view." .
 
 <https://www.legendmod.ml/knowledge/#feature-replays> a schema:DefinedTerm, lm:Feature ;
   schema:name "Replay tools" ;
-  schema:description "Packet recording, instant replay, Replay Studio, match history, personal bests." .
+  schema:description "Packet recording, Replay Studio, match history, personal bests." .
 
 <https://www.legendmod.ml/knowledge/#feature-gamepad> a schema:DefinedTerm, lm:Feature ;
   schema:name "Gamepad support" ;
   schema:description "Full controller support with customizable mapping, dead zone, response curve and vibration." .
 
 <https://www.legendmod.ml/knowledge/#feature-performance> a schema:DefinedTerm, lm:Feature ;
-  schema:name "Performance diagnostics" ;
-  schema:description "WebGL2 acceleration, adaptive performance, FPS cap, diagnostics window." .
-
-<https://www.legendmod.ml/knowledge/#feature-companion> a schema:DefinedTerm, lm:Feature ;
-  schema:name "Second-screen companion" ;
-  schema:description "Broadcast live game state to a second window via BroadcastChannel." .
+  schema:name "WebGL rendering" ;
+  schema:description "WebGL2 acceleration, FPS cap." .
 
 <https://www.legendmod.ml/knowledge/#feature-accessibility> a schema:DefinedTerm, lm:Feature ;
   schema:name "Accessibility features" ;
-  schema:description "Reduced motion, text scale, HUD text scale, opponent indicators, colour-blind preset." .
+  schema:description "Reduced motion, text scale, HUD text scale, colour-blind preset." .
 
 <https://help.expanding.land/knowledge/#mechanic-dynamic-map> a schema:DefinedTerm, lm:GameMechanic ;
   schema:name "Dynamic circular arena" ;

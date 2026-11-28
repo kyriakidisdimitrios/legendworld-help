@@ -8,7 +8,7 @@
     <schema:description>Legend Mod is a browser client and extension project for Agar.io-style cell games, with custom skins, themes, configurable controls, multiboxing and replay tools.</schema:description>
     <schema:applicationCategory>GameApplication</schema:applicationCategory>
     <schema:operatingSystem>Web browser</schema:operatingSystem>
-    <schema:softwareVersion>3.629</schema:softwareVersion>
+    <schema:softwareVersion>3.702</schema:softwareVersion>
     <schema:inLanguage>en</schema:inLanguage>
     <schema:inLanguage>ar</schema:inLanguage>
     <schema:inLanguage>bg</schema:inLanguage>
@@ -34,10 +34,7 @@
     <schema:featureList>Replay tools</schema:featureList>
     <schema:featureList>Gamepad support</schema:featureList>
     <schema:featureList>Mobile touch controls</schema:featureList>
-    <schema:featureList>Settings profiles</schema:featureList>
-    <schema:featureList>Performance diagnostics</schema:featureList>
-    <schema:featureList>Adaptive performance</schema:featureList>
-    <schema:featureList>Second-screen companion</schema:featureList>
+    <schema:featureList>WebGL rendering</schema:featureList>
     <schema:featureList>Chat system</schema:featureList>
     <schema:featureList>HUD helpers</schema:featureList>
     <schema:featureList>Accessibility features</schema:featureList>
@@ -56,7 +53,6 @@
     <lm:hasFeature rdf:resource="https://www.legendmod.ml/knowledge/#feature-replays"/>
     <lm:hasFeature rdf:resource="https://www.legendmod.ml/knowledge/#feature-gamepad"/>
     <lm:hasFeature rdf:resource="https://www.legendmod.ml/knowledge/#feature-performance"/>
-    <lm:hasFeature rdf:resource="https://www.legendmod.ml/knowledge/#feature-companion"/>
     <lm:hasFeature rdf:resource="https://www.legendmod.ml/knowledge/#feature-accessibility"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://www.legendmod.ml/#extension">
@@ -65,7 +61,7 @@
     <schema:description>Chrome extension for Legend Mod. Adds custom skins, themes, controls and more to Agar.io-style games. Does NOT collect, store or transmit personal data externally.</schema:description>
     <schema:applicationCategory>BrowserExtension</schema:applicationCategory>
     <schema:operatingSystem>Chrome</schema:operatingSystem>
-    <schema:softwareVersion>1.8.4</schema:softwareVersion>
+    <schema:softwareVersion>1.8.5</schema:softwareVersion>
     <schema:installUrl rdf:resource="https://chromewebstore.google.com/detail/legend-express-agario-ext/nmkhchnpjlcnicfchpkhckidmmmondja"/>
     <schema:browserRequirements>Google Chrome</schema:browserRequirements>
     <schema:offers rdf:parseType="Resource">
@@ -157,13 +153,13 @@
     <rdf:type rdf:resource="https://schema.org/DefinedTerm"/>
     <rdf:type rdf:resource="https://www.legendmod.ml/knowledge/vocabulary.ttl#Feature"/>
     <schema:name>Custom skins, video skins and skin tools</schema:name>
-    <schema:description>Custom image URLs, video skins, skin collections, skin checker, IndexedDB cache.</schema:description>
+    <schema:description>Custom image URLs, video skins, skin checker, IndexedDB cache.</schema:description>
   </rdf:Description>
   <rdf:Description rdf:about="https://www.legendmod.ml/knowledge/#feature-themes">
     <rdf:type rdf:resource="https://schema.org/DefinedTerm"/>
     <rdf:type rdf:resource="https://www.legendmod.ml/knowledge/vocabulary.ttl#Feature"/>
     <schema:name>Themes and HUD customization</schema:name>
-    <schema:description>CSS variable-based themes, 8 presets, Theme Workshop with live preview.</schema:description>
+    <schema:description>CSS variable-based themes, 8 presets, Theme Workshop with live preview and Compare.</schema:description>
   </rdf:Description>
   <rdf:Description rdf:about="https://www.legendmod.ml/knowledge/#feature-commandcentre">
     <rdf:type rdf:resource="https://schema.org/DefinedTerm"/>
@@ -175,13 +171,13 @@
     <rdf:type rdf:resource="https://schema.org/DefinedTerm"/>
     <rdf:type rdf:resource="https://www.legendmod.ml/knowledge/vocabulary.ttl#Feature"/>
     <schema:name>Multibox controls</schema:name>
-    <schema:description>Control up to 4 connections with colour-coded rings and middle camera view.</schema:description>
+    <schema:description>Control up to 4 connections with a ring on the controlled unit and middle camera view.</schema:description>
   </rdf:Description>
   <rdf:Description rdf:about="https://www.legendmod.ml/knowledge/#feature-replays">
     <rdf:type rdf:resource="https://schema.org/DefinedTerm"/>
     <rdf:type rdf:resource="https://www.legendmod.ml/knowledge/vocabulary.ttl#Feature"/>
     <schema:name>Replay tools</schema:name>
-    <schema:description>Packet recording, instant replay, Replay Studio, match history, personal bests.</schema:description>
+    <schema:description>Packet recording, Replay Studio, match history, personal bests.</schema:description>
   </rdf:Description>
   <rdf:Description rdf:about="https://www.legendmod.ml/knowledge/#feature-gamepad">
     <rdf:type rdf:resource="https://schema.org/DefinedTerm"/>
@@ -192,20 +188,14 @@
   <rdf:Description rdf:about="https://www.legendmod.ml/knowledge/#feature-performance">
     <rdf:type rdf:resource="https://schema.org/DefinedTerm"/>
     <rdf:type rdf:resource="https://www.legendmod.ml/knowledge/vocabulary.ttl#Feature"/>
-    <schema:name>Performance diagnostics</schema:name>
-    <schema:description>WebGL2 acceleration, adaptive performance, FPS cap, diagnostics window.</schema:description>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://www.legendmod.ml/knowledge/#feature-companion">
-    <rdf:type rdf:resource="https://schema.org/DefinedTerm"/>
-    <rdf:type rdf:resource="https://www.legendmod.ml/knowledge/vocabulary.ttl#Feature"/>
-    <schema:name>Second-screen companion</schema:name>
-    <schema:description>Broadcast live game state to a second window via BroadcastChannel.</schema:description>
+    <schema:name>WebGL rendering</schema:name>
+    <schema:description>WebGL2 acceleration, FPS cap.</schema:description>
   </rdf:Description>
   <rdf:Description rdf:about="https://www.legendmod.ml/knowledge/#feature-accessibility">
     <rdf:type rdf:resource="https://schema.org/DefinedTerm"/>
     <rdf:type rdf:resource="https://www.legendmod.ml/knowledge/vocabulary.ttl#Feature"/>
     <schema:name>Accessibility features</schema:name>
-    <schema:description>Reduced motion, text scale, HUD text scale, opponent indicators, colour-blind preset.</schema:description>
+    <schema:description>Reduced motion, text scale, HUD text scale, colour-blind preset.</schema:description>
   </rdf:Description>
   <rdf:Description rdf:about="https://help.expanding.land/knowledge/#mechanic-dynamic-map">
     <rdf:type rdf:resource="https://schema.org/DefinedTerm"/>

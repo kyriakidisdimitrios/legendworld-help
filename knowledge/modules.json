@@ -24,23 +24,16 @@
     {
       "id": "accessibility",
       "file": "ogario/modules/accessibility.js",
-      "lines": 246,
-      "description": "Accessibility features: reduced motion, text scale, HUD text scale, opponent indicators, focus warnings.",
+      "lines": 111,
+      "description": "Accessibility features: menu text scale (Settings > Accessibility) and HUD text scale (Theme > HUD, on top of the HUD scale); reduced motion is a core option.",
       "feature": "Accessibility"
     },
     {
       "id": "analytics",
       "file": "ogario/modules/analytics.js",
       "lines": 1159,
-      "description": "Statistics dashboard with heatmaps, play pattern analysis (coach), personal objectives, game summaries. Tracks position samples, splits, kills.",
-      "feature": "Stats and Analytics"
-    },
-    {
-      "id": "companion",
-      "file": "ogario/modules/companion.js",
-      "lines": 685,
-      "description": "Second-screen companion broadcasting live game state via BroadcastChannel. Mass, rank, minimap, leaderboard, chat widgets.",
-      "feature": "Companion"
+      "description": "Game stats for the Replays window: the Dashboard, Heatmaps, Coach (play pattern analysis) and Objectives (daily ones scaled to your own game history for long sessions, and personal) views, from the summaries of every game (always recorded). Tracks position samples, splits, kills.",
+      "feature": "Replay tools and Replay Studio"
     },
     {
       "id": "deathrecap",
@@ -53,14 +46,14 @@
       "id": "gamepad",
       "file": "ogario/modules/gamepad.js",
       "lines": 748,
-      "description": "Full gamepad/controller support with customizable button mapping (16 buttons), dead zone, response curve, haptic vibration.",
+      "description": "Full gamepad/controller support: the 16 buttons are bound in the Hotkeys window like keys; dead zone, response curve, triggers, inverted axes and vibration in the Gamepad window (modules/gamepad-ui.js, with a live test).",
       "feature": "Gamepad"
     },
     {
       "id": "hudhelpers",
       "file": "ogario/modules/hudhelpers.js",
       "lines": 826,
-      "description": "Split range circles, merge countdown, relative mass, edge arrows, cell panel, mass format modes, virus range circles.",
+      "description": "Split range circles, merge sound, relative mass, edge arrows, move direction arrow, mass format modes, virus range circles.",
       "feature": "HUD Helpers"
     },
     {
@@ -85,13 +78,6 @@
       "feature": "Replay Studio"
     },
     {
-      "id": "profiles",
-      "file": "ogario/modules/profiles.js",
-      "lines": 1386,
-      "description": "Settings profiles management. Up to 30 named profiles, auto-switching per server/mode/input device, 5 automatic backups.",
-      "feature": "Settings Profiles"
-    },
-    {
       "id": "practice",
       "file": "ogario/modules/practice.js",
       "lines": 707,
@@ -106,13 +92,6 @@
       "feature": "Spectator Director"
     },
     {
-      "id": "macroeditor",
-      "file": "ogario/modules/macroeditor.js",
-      "lines": 511,
-      "description": "Custom macro editor. 3 slots, up to 24 steps, dry run mode, safety limits (20ms split gap, 10ms feed gap).",
-      "feature": "Custom Macros"
-    },
-    {
       "id": "plugins",
       "file": "ogario/modules/plugins.js",
       "lines": 940,
@@ -123,14 +102,14 @@
       "id": "lab",
       "file": "ogario/modules/lab.js",
       "lines": 245,
-      "description": "Experimental features toggle. Modules register experiments with on/off switches stored separately from settings.",
+      "description": "Experimental features toggle. Modules and plugins register experiments with on/off switches stored separately from settings; plugins.js shows them in the User Scripts window.",
       "feature": "Lab"
     },
     {
       "id": "discovery",
       "file": "ogario/modules/discovery.js",
       "lines": 613,
-      "description": "Feature guide cards introducing Legend Mod features. One-tap option switches, auto-opens after updates.",
+      "description": "Feature guide cards introducing Legend Mod features. One-tap option switches; opened from the Command Centre or the \"What's new\" toast link (never by itself).",
       "feature": "Discovery"
     },
     {
@@ -141,17 +120,10 @@
       "feature": "Various"
     },
     {
-      "id": "perf",
-      "file": "ogario/modules/perf.js",
-      "lines": 1848,
-      "description": "Performance diagnostics, adaptive performance (3 levels), frame time tracking, Chrome Long Animation Frames API, net graph.",
-      "feature": "Performance"
-    },
-    {
       "id": "themeworkshop",
       "file": "ogario/modules/themeworkshop.js",
-      "lines": 1254,
-      "description": "Theme creation and management. Up to 30 themes with 5 versions each, live preview, gallery, export/import.",
+      "lines": 1233,
+      "description": "Theme creation and management window (Theme tab button): up to 30 themes with 5 versions each, live preview, Compare, gallery.",
       "feature": "Theme Workshop"
     },
     {
@@ -169,6 +141,6 @@
       "feature": "Extension"
     }
   ],
-  "totalModules": 23,
+  "totalModules": 19,
   "totalHotkeyBindings": "146+"
 }
